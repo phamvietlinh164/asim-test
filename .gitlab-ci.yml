@@ -1,7 +1,7 @@
 production:
   script:
     - ./_update.sh
-  stage: deploy testing
+  stage: deploy
   only:
     - testing
   except:
