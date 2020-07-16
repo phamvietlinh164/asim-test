@@ -1,0 +1,11 @@
+production:
+  script:
+    - ./_update.sh
+  stage: deploy testing
+  only:
+    - testing
+  except:
+    - dev
+    - live
+  tags:
+    - medpro-static-testing
