@@ -1,14 +1,17 @@
-import { Controller, Post, UploadedFile, UseInterceptors, Bind } from '@nestjs/common';
-import { FileInterceptor } from '@nestjs/platform-express';
+import { Controller, Post, UploadedFile, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
+import { FileFieldsInterceptor } from '@nestjs/platform-express';
 // import { multer } from 'multer';
 const multer = require('multer');
+const mkdirp = require('mkdirp');
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './uploads/')
+    const dir = `client/st/hospitals/${req.headers.hospital}`;
+    mkdirp(dir, err => cb(err, dir))
   },
   filename: function (req, file, cb) {
-    cb(null, new Date().toISOString().replace(/:/g, '-') + file.originalname)
+    const type = file.originalname.split(".")[1];
+    cb(null, `${req.headers.name}.${type}`)
   }
 })
 
@@ -23,18 +26,24 @@ const fileFilter = (req, file, cb) => {
 }
 
 const options = {
-  storage: storage,
+  storage,
   limits: {
     fileSize: 1024 * 1024 * 5
   },
-  fileFilter: fileFilter
+  fileFilter
 }
+
 @Controller()
 export class UploadController {
   @Post('upload')
-  @UseInterceptors(FileInterceptor('file', options))
-  @Bind(UploadedFile())
-  uploadFile(file) {
-    console.log(file);
+  @Bind(UploadedFiles())
+  @UseInterceptors(FileFieldsInterceptor([
+    { name: 'image', maxCount: 1 },
+    // { name: 'background', maxCount: 1 }
+  ], options))
+
+  uploadFile(files) {
+
   }
+
 }
