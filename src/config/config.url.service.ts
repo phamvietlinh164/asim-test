@@ -26,6 +26,5 @@ export class UrlConfigService extends ConfigManager {
         return this.get<string>('API_DOCS_JSON');
     }
 
-   
 
 }
