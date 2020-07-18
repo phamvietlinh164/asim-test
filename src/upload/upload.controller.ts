@@ -1,4 +1,4 @@
-import { Controller, Post, UploadedFile, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
+import { Controller, Post, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 // import { multer } from 'multer';
 const multer = require('multer');
@@ -17,12 +17,11 @@ const storage = multer.diskStorage({
 
 const fileFilter = (req, file, cb) => {
   // reject the file
-  if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
+  if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png' || file.mimetype === 'image/svg+xml') {
     cb(null, true)
   } else {
     cb(null, false)
   }
-
 }
 
 const options = {
