@@ -1,4 +1,4 @@
-import { Controller, Post, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
+import { Controller, Post, UseInterceptors, Bind, UploadedFiles, Req } from '@nestjs/common';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 // import { multer } from 'multer';
 const multer = require('multer');
@@ -32,9 +32,9 @@ const options = {
   fileFilter
 }
 
-@Controller()
+@Controller('upload')
 export class UploadController {
-  @Post('upload')
+  @Post()
   @Bind(UploadedFiles())
   @UseInterceptors(FileFieldsInterceptor([
     { name: 'image', maxCount: 1 },
@@ -42,7 +42,9 @@ export class UploadController {
   ], options))
 
   uploadFile(files) {
+    console.log(files);
 
+    return 'Upload successfully!';
   }
 
 }
