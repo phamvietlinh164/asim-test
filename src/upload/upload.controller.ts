@@ -11,13 +11,13 @@ const storage = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     const type = file.originalname.split(".")[1];
-    cb(null, `${req.headers.name}.${type}`)
+    cb(null, `${req.headers.name}.png`)
   }
 })
 
 const fileFilter = (req, file, cb) => {
   // reject the file
-  if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png' || file.mimetype === 'image/svg+xml') {
+  if (file.mimetype === 'image/png') {
     cb(null, true)
   } else {
     cb(null, false)
@@ -42,8 +42,6 @@ export class UploadController {
   ], options))
 
   uploadFile(files) {
-    console.log(files);
-
     return 'Upload successfully!';
   }
 
