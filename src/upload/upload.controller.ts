@@ -32,9 +32,9 @@ const options = {
   fileFilter
 }
 
-@Controller('upload')
+@Controller()
 export class UploadController {
-  @Post()
+  @Post('upload')
   @Bind(UploadedFiles())
   @UseInterceptors(FileFieldsInterceptor([
     { name: 'image', maxCount: 1 },
