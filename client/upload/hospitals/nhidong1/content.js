@@ -1,77 +1,81 @@
-{
-  "info": [
+const staticUrl = require('../../../../config/staticUrl');
+
+const nhidong1 = {
+  info: [
     {
-      "key": "logo-header",
-      "displayPrefix": "",
-      "value": "/st/hospitals/dkkvangiang-logo-header.png"
+      key: "logo-header",
+      displayPrefix: "",
+      value: staticUrl + "/static/upload/hospitals/nhidong1/header_logo.png"
     },
     {
-      "key": "logo-footer",
-      "displayPrefix": "",
-      "value": "/st/hospitals/dkkvangiang-logo-footer.png"
+      key: "logo-footer",
+      displayPrefix: "",
+      value: staticUrl + "/static/upload/hospitals/nhidong1/header_logo.png"
+    },
+
+    {
+      key: "logo-header-white",
+      displayPrefix: "",
+      value: staticUrl + "/static/upload/hospitals/nhidong1/header_logo.png"
     },
     {
-      "key": "logo-header-white",
-      "displayPrefix": "",
-      "value": "/st/hospitals/dkkvangiang-logo-white.svg"
+      key: "name",
+      displayPrefix: "",
+      value: "Bệnh viện Trưng Vương"
     },
     {
-      "key": "name",
-      "displayPrefix": "",
-      "value": "Bệnh viện Đa khoa Khu vực Tỉnh An Giang"
+      key: "address",
+      displayPrefix: "Địa chỉ:",
+      value: "266 Lý Thường Kiệt, Phường 14, Quận 10, TPHCM"
     },
     {
-      "key": "address",
-      "displayPrefix": "Địa chỉ:",
-      "value": "917 Tôn Đức Thắng - Phường Vĩnh Mỹ - Thành Phố Châu Đốc - An Giang"
+      key: "website",
+      displayPrefix: "Website:",
+      value: "http://bvtrungvuong.vn/"
     },
     {
-      "key": "website",
-      "displayPrefix": "Website:",
-      "value": "http://bvkvcd.com.vn/"
+      key: "email",
+      displayPrefix: "Email:",
+      value: "bv.cctv@tphcm.gov.vn"
     },
     {
-      "key": "email",
-      "displayPrefix": "Email:",
-      "value": "bvdkkv.angiang@gmail.com"
+      key: "phone",
+      displayPrefix: "Điện thoại:",
+      value: "(028) 54484949 - (028) 38656744"
     },
     {
-      "key": "phone",
-      "displayPrefix": "Điện thoại:",
-      "value": "02963.569568"
+      key: "ios",
+      displayPrefix: "",
+      value: "/"
     },
     {
-      "key": "ios",
-      "displayPrefix": "",
-      "value": "/"
+      key: "android",
+      displayPrefix: "",
+      value: "/"
     },
     {
-      "key": "android",
-      "displayPrefix": "",
-      "value": "/"
+      key: "hotline-partner",
+      displayPrefix: "Giải đáp về chuyên môn",
+      value: "1900757555"
     },
     {
-      "key": "hotline-partner",
-      "displayPrefix": "Giải đáp về chuyên môn",
-      "value": "02963.569568"
+      key: "hotline-medpro",
+      displayPrefix: "Hỗ trợ kỹ thuật",
+      value: "1900.2267"
     },
     {
-      "key": "hotline-medpro",
-      "displayPrefix": "Hỗ trợ kỹ thuật",
-      "value": "1900.2267"
+      key: "google-map",
+      displayPrefix: "",
+      value:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.125245989395!2d106.6594844!3d10.7705588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb83e2a72eb77ac2!2zVHLGsG5nIFbGsMahbmcgSG9zcGl0YWw!5e0!3m2!1sen!2s!4v1591006540481!5m2!1sen!2s"
     },
     {
-      "key": "google-map",
-      "displayPrefix": "",
-      "value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.595878404254!2d105.14527561411582!3d10.688442963735893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a23f33cf6e2f5%3A0x1165046806c02d00!2zQuG7h25oIHZp4buHbiDEkGEga2hvYSBraHUgduG7sWMgdOG7iW5oIEFuIEdpYW5n!5e0!3m2!1svi!2s!4v1592531223832!5m2!1svi!2s"
-    },
-    {
-      "key": "login",
-      "link": "/dang-nhap",
-      "url": "/login",
-      "name": "Đăng nhập",
-      "content": "<div class='stackedit'>
-        <div class='stackedit__html'>
+      key: "login",
+      link: "/dang-nhap",
+      url: "/login",
+      name: "Đăng nhập",
+      content: `<div class="stackedit">
+        <div class="stackedit__html">
           <p><b>Người bệnh khi đăng ký khám bệnh trực tuyến sẽ được hưởng các quyền lợi: </b></p>
           <ul>
             <li>Không còn phải xếp hàng để lấy số khám bệnh</li>
@@ -120,97 +124,102 @@
               Việc bấm “Đồng ý” và “Tiếp tục” được xem là sự cam kết của Quý khách về việc đã đọc, hiểu và đồng ý với tất cả các Quy định, Chính sách và Điều khoản của chúng tôi. 
             </li>
           </ul>
-        </div>
-      </div>",
-      "sortOrder": 2,
-      "icon": "fal fa-address-card"
+        </div> 
+      </div>`,
+      sortOrder: 2,
+      icon: "fal fa-address-card"
     },
     {
-      "key": "working-date",
-      "displayPrefix": "Thời gian làm việc",
-      "value": "từ thứ 2 đến thứ 7"
+      key: "working-date",
+      displayPrefix: "Thời gian làm việc",
+      value: "từ thứ 2 đến thứ 7"
     },
     {
-      "key": "working-time",
-      "displayPrefix": "Thời gian làm việc",
-      "value": "7:30 - 16:30"
+      key: "working-time",
+      displayPrefix: "Thời gian làm việc",
+      value: "7:30 - 16:30"
+    },
+    {
+      key: "bien-lai",
+      displayPrefix: "",
+      value: ""
     }
   ],
-  "banners": [
+  banners: [
     {
-      "key": "trang-chu",
-      "list": [
+      key: "trang-chu",
+      list: [
         {
-          "key": 1,
-          "url": "/st/hospitals/banners/dkkvangiang.png",
-          "style": "center bottom no-repeat"
+          key: 1,
+          url: staticUrl + "/static/upload/hospitals/nhidong1/banner_desktop.png",
+          style: "center bottom no-repeat"
         }
       ]
     },
     {
-      "key": "trang-chu-mobile",
-      "list": [
+      key: "trang-chu-mobile",
+      list: [
         {
-          "key": 2,
-          "url": "/st/hospitals/banners/dkkvangiang.png",
-          "style": "center bottom no-repeat"
+          key: 2,
+          url: staticUrl + "/static/upload/hospitals/nhidong1/banner_mobile.png",
+          style: "center bottom no-repeat"
         }
       ]
     },
     {
-      "key": "feature",
-      "list": [
+      key: "feature",
+      list: [
         {
-          "key": 1,
-          "url": "/st/hospitals/banners/dkkvangiang-slide.png",
-          "style": ""
+          key: 1,
+          url: staticUrl + "/static/upload/hospitals/nhidong1/slide.png",
+          style: ""
         }
       ]
     }
   ],
-  "menu": [
+  menu: [
     {
-      "key": "trang-chu",
-      "link": "/",
-      "url": "/",
-      "name": "Trang chủ",
-      "content": "",
-      "sortOrder": 1,
-      "icon": "fal fa-home"
+      key: "trang-chu",
+      link: "/",
+      url: "/",
+      name: "Trang chủ",
+      content: "",
+      sortOrder: 1,
+      icon: "fal fa-home"
     },
     {
-      "key": "gioi-thieu",
-      "link": "/gioi-thieu",
-      "url": "/gioi-thieu",
-      "name": "Giới thiệu",
-      "content": "<div class='stackedit'> <div class='stackedit__html'> <p style=\"text-align:justify; margin-right: 0cm; margin-left: 0cm\"><span style=\"font-size: 16px;\">Chào mừng bạn đến với&nbsp;<strong>Phần mềm Đăng ký khám bệnh theo hẹn tại Bệnh viện đa khoa khu vực tỉnh An Giang</strong>.&nbsp;Phần mềm này giúp người bệnh và thân nhân người bệnh có thể thực hiện trực tuyến quá trình đăng ký khám bệnh tại bệnh viện ở mọi lúc mọi nơi mà không cần phải đến trực tiếp bệnh viện, bao gồm các tiện ích trực tuyến sau đây:&nbsp;</span></p> <ul> <li style=\"text-align: justify; margin-right: 0cm; margin-left: 0cm;\"><span style=\"font-size: 16px;\">&nbsp;Đăng ký và chọn ngày, giờ khám bệnh.</span></li> <li style=\"text-align: justify; margin-right: 0cm; margin-left: 0cm;\"><span style=\"font-size: 16px;\">Thanh toán chi phí khám bệnh không dùng tiền mặt.</span></li> <li style=\"text-align: justify; margin-right: 0cm; margin-left: 0cm;\"><span style=\"font-size: 16px;\">Quản lý cuộc hẹn khám bệnh và tái khám</span></li> <li style=\"text-align: justify; margin-right: 0cm; margin-left: 0cm;\"><span style=\"font-size: 16px;\">Quản lý thông tin, dữ liệu khám bệnh của&nbsp;người bệnh.&nbsp;&nbsp;</span></li> </ul> <p style=\"text-align:justify; margin-right: 0cm; margin-left: 0cm\"><span style=\"font-size: 16px;\">Với mong muốn không ngừng cải tiến, nâng cao chất lượng dịch vụ và làm tăng sự hài lòng của thân nhân và người bệnh, Chúng tôi hy vọng sẽ mang lại một phương thức&nbsp;giúp thân nhân và người bệnh có thể tiếp cận với các dịch vụ khám chữa bệnh tại bệnh viện một cách dễ dàng, nhanh chóng và thuận lợi nhất.<br> Trân trọng!</span></p> </div> </div>",
-      "sortOrder": 2,
-      "icon": "fal fa-address-card"
+      key: "gioi-thieu",
+      link: "/gioi-thieu",
+      url: "/gioi-thieu",
+      name: "Giới thiệu",
+      content: `<div class="stackedit"> <div class="stackedit__html"> <p style="text-align:justify; margin-right:0cm; margin-left:0cm"><span style="font-size:16px;">Chào mừng bạn đến với&nbsp;<strong>Phần mềm Đăng ký khám bệnh theo hẹn tại Bệnh viện Trưng Vương</strong>.&nbsp;Phần mềm này giúp người bệnh và thân nhân người bệnh có thể thực hiện trực tuyến quá trình đăng ký khám bệnh tại bệnh viện ở mọi lúc mọi nơi mà không cần phải đến trực tiếp bệnh viện, bao gồm các tiện ích trực tuyến sau đây:&nbsp;</span></p> <ul> <li style="text-align: justify; margin-right: 0cm; margin-left: 0cm;"><span style="font-size:16px;">&nbsp;Đăng ký và chọn ngày, giờ khám bệnh.</span></li> <li style="text-align: justify; margin-right: 0cm; margin-left: 0cm;"><span style="font-size:16px;">Thanh toán chi phí khám bệnh không dùng tiền mặt.</span></li> <li style="text-align: justify; margin-right: 0cm; margin-left: 0cm;"><span style="font-size:16px;">Quản lý cuộc hẹn khám bệnh và tái khám</span></li> <li style="text-align: justify; margin-right: 0cm; margin-left: 0cm;"><span style="font-size:16px;">Quản lý thông tin, dữ liệu khám bệnh của&nbsp;người bệnh.&nbsp;&nbsp;</span></li> </ul> <p style="text-align:justify; margin-right:0cm; margin-left:0cm"><span style="font-size:16px;">Với mong muốn không ngừng cải tiến, nâng cao chất lượng dịch vụ và làm tăng sự hài lòng của thân nhân và người bệnh, Chúng tôi hy vọng sẽ mang lại một phương thức&nbsp;giúp thân nhân và người bệnh có thể tiếp cận với các dịch vụ khám chữa bệnh tại bệnh viện một cách dễ dàng, nhanh chóng và thuận lợi nhất.<br> Trân trọng!</span></p> </div> </div>`,
+      sortOrder: 2,
+      icon: "fal fa-address-card"
     },
     {
-      "key": "quy-trinh",
-      "link": "/quy-trinh",
-      "url": "/quy-trinh",
-      "name": "Quy trình",
-      "content": "<ul class='timeline'>
+      key: "quy-trinh",
+      link: "/quy-trinh",
+      url: "/quy-trinh",
+      name: "Quy trình",
+      content: `<ul class="timeline">
       <li>
-        <p class='timeline_date'>Bước 1</p>
-        <div class='timeline_content'>
+        <p class="timeline_date">Bước 1</p>
+        <div class="timeline_content">
           <h3>Đặt lịch khám</h3>
-          <div class='ct_inside'>
+          <div class="ct_inside">
             <ul>
               <li>Người dùng truy cập và đăng nhập phần mềm qua:</li>
-              <li>Ứng dụng di động: \"Bệnh Viện đa khoa khu vực tỉnh An Giang\" hoặc website: \"https://bvkvcd.medpro.com.vn\"</li>
-              <li>Chọn thông tin khám: dịch vụ,ngày khám, giờ khám</li>
+              <li>Ứng dụng di động: "Bệnh Viện Trưng Vương" hoặc website: "https://trungvuong.medpro.com.vn"</li>
+              <li>Chọn thông tin khám: ngày khám, giờ khám</li>
             </ul>
           </div>
         </div>
       </li>
       <li>
-        <p class='timeline_date'>Bước 2</p>
-        <div class='timeline_content'>
+        <p class="timeline_date">Bước 2</p>
+        <div class="timeline_content">
           <h3>Thanh toán tiền khám</h3>
-          <div class='ct_inside'>
+          <div class="ct_inside">
             <ul>
               <li>Người dùng chọn và thực hiện thanh toán qua một trong các phương thức có tích hợp trên phần mềm:</li>
               <li>Ví điện tử</li>
@@ -220,30 +229,29 @@
             <p><strong>Lưu ý tổng số tiền thanh toán sẽ bao gồm:</strong></p>
             <ul>
               <li>Tiền khám: dịch vụ theo quy định của bệnh viện.</li>
-              <li>Phí tiện ích: 10,
-      000 đồng.</li>
+              <li>Phí tiện ích: 10,000 đồng.</li>
               <li>Sau khi thanh toán thành công Phiếu khám điện tử sẽ được gửi qua email, tin nhắn sms và trên phần mềm.</li>
             </ul>
           </div>
         </div>
       </li>
       <li>
-        <p class='timeline_date'>Bước 3</p>
-        <div class='timeline_content'>
+        <p class="timeline_date">Bước 3</p>
+        <div class="timeline_content">
           <h3>Xác nhận Người bệnh đến bệnh viện khám theo hẹn</h3>
-          <div class='ct_inside'>
+          <div class="ct_inside">
             <ul>
               <li>Sau khi đặt khám thành công phiếu khám điện tử sẽ được gửi ngay qua email, tin nhắn sms và trên phần mềm.</li>
-              <li><strong>Đến ngày khám, </strong> quý khách vui lòng đến quầy tiếp nhận số 8 - 14 trước hẹn 15 phút để xác nhận thông tin trước vào phòng khám</li>
+              <li><strong>Đến ngày khám, </strong> quý khách vui lòng đến cửa tiếp nhận số 1 để được hướng dẫn vào phòng khám.</li>
             </ul>
           </div>
         </div>
       </li>
       <li>
-        <p class='timeline_date'>Bước 4</p>
-        <div class='timeline_content'>
+        <p class="timeline_date">Bước 4</p>
+        <div class="timeline_content">
           <h3>Khám và thực hiện cận lâm sàng</h3>
-          <div class='ct_inside'>
+          <div class="ct_inside">
             <ul>
               <li>Người bệnh khám tại các phòng khám chuyên khoa theo sự hướng dẫn của nhân viên y tế.</li>
               <li>Thực hiện cận lâm sàng (nếu có) và đóng phí tại các quầy thu ngân</li>
@@ -252,24 +260,34 @@
           </div>
         </div>
       </li>
-    </ul>",
-      "sortOrder": 3,
-      "icon": "fal fa-stethoscope"
+    </ul>`,
+      sortOrder: 3,
+      icon: "fal fa-stethoscope"
     },
     {
-      "key": "thac-mac",
-      "link": "/thac-mac",
-      "url": "/thac-mac",
-      "name": "Thắc mắc",
-      "content": [
+      key: "huong-dan",
+      link: "/",
+      url: "/huong-dan",
+      name: "Hướng dẫn",
+      content: "Nội dung hướng dẫn",
+      sortOrder: 4,
+      icon: "fal fa-book"
+    },
+    {
+      key: "thac-mac",
+      link: "/thac-mac",
+      url: "/thac-mac",
+      name: "Thắc mắc",
+      content: [
         {
-          "id": 1,
-          "name": "Vấn đề chung",
-          "faq": [
+          id: 1,
+          name: "Vấn đề chung",
+          faq: [
             {
-              "id": 101,
-              "question": "Lợi ích khi sử dụng phần mềm đăng ký khám bệnh trực tuyến này là gì?",
-              "answer": "<p>Đặt lịch kh&aacute;m bệnh theo hẹn, mọi l&uacute;c mọi nơi, m&agrave; kh&ocirc;ng cần đến bệnh viện</p>
+              id: 101,
+              question:
+                "Lợi ích khi sử dụng phần mềm đăng ký khám bệnh trực tuyến này là gì?",
+              answer: `<p>Đặt lịch kh&aacute;m bệnh theo hẹn, mọi l&uacute;c mọi nơi, m&agrave; kh&ocirc;ng cần đến bệnh viện</p>
               <ul>
               <li>Kh&ocirc;ng xếp h&agrave;ng chờ đợi để lấy số tiếp nhận kh&aacute;m bệnhd</li>
               <li>Giảm thời gian chờ kh&aacute;m tại bệnh viện.</li>
@@ -280,223 +298,231 @@
               <li>Tra cứu kết quả kh&aacute;m chữa bệnh trực tuyến qua phần mềm.</li>
               <li>Thanh to&aacute;n viện ph&iacute;, chi ph&iacute; kh&aacute;m chữa bệnh trực tuyến, mọi l&uacute;c mọi nơi</li>
               <li>Dễ d&agrave;ng tiếp cận v&agrave; nhận c&aacute;c th&ocirc;ng b&aacute;o mới, th&ocirc;ng tin từ bệnh viện</li>
-              </ul>",
-              "status": 1,
-              "category_id": 1
+              </ul>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 102,
-              "question": "Làm sao để sử dụng được phần mềm đăng ký khám bệnh trực tuyến?",
-              "answer": "<p>
+              id: 102,
+              question:
+                "Làm sao để sử dụng được phần mềm đăng ký khám bệnh trực tuyến?",
+              answer: `<p>
               <ul>
-              <li>C&oacute; thể truy cập v&agrave; sử dụng phần mềm tr&ecirc;n tất cả thiết bị c&oacute; thể truy cập mạng internet. ( 3G,
-              4G,
-              5G,Wifi, d&acirc;y mạng&hellip;..)</li>
+              <li>C&oacute; thể truy cập v&agrave; sử dụng phần mềm tr&ecirc;n tất cả thiết bị c&oacute; thể truy cập mạng internet. ( 3G,4G,5G,Wifi, d&acirc;y mạng&hellip;..)</li>
               <li>M&aacute;y t&iacute;nh b&agrave;n, laptop: truy cập website</li>
               <li>Hầu hết điện thoại th&ocirc;ng minh: tải ứng dụng phần mềm tại kho tải Gplay hoặc AppStore</li>
               <li>M&aacute;y t&iacute;nh bảng v&agrave; c&aacute;c thiết bị kh&aacute;c &hellip;&hellip;</li>
               </ul>
-              </p>",
-              "status": 1,
-              "category_id": 1
+              </p>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 103,
-              "question": "Đăng ký khám bệnh online có mất phí không?",
-              "answer": "<ul>
+              id: 103,
+              question: "Đăng ký khám bệnh online có mất phí không?",
+              answer: `<ul>
               <li>C&oacute; ph&iacute; tiện &iacute;ch, khi sử dụng dịch vụ đăng k&yacute; kh&aacute;m bệnh trực tuyến qua phần mềm ( tương tự ph&iacute; cước viễn th&ocirc;ng qua tổng đ&agrave;i )</li>
               <li>Hiện tại chỉ mất ph&iacute; khi đăng k&yacute; kh&aacute;m bệnh th&agrave;nh c&ocirc;ng, ngo&agrave;i ra việc sử dụng ứng dụng v&agrave; c&aacute;c t&iacute;nh năng kh&aacute;c l&agrave; ho&agrave;n to&agrave;n miễn ph&iacute;.</li>
-              </ul>",
-              "status": 1,
-              "category_id": 1
+              </ul>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 104,
-              "question": "Tôi có thể dùng phần mềm để đăng ký và lấy số thứ tự khám cho bệnh nhân khác không?",
-              "answer": "<ul>
+              id: 104,
+              question:
+                "Tôi có thể dùng phần mềm để đăng ký và lấy số thứ tự khám cho bệnh nhân khác không?",
+              answer: `<ul>
               <li>Phần mềm khuyến c&aacute;o người d&acirc;n, tự sử dụng phần mềm để đăng k&yacute; kh&aacute;m bệnh cho bản th&acirc;n. Để tự quản l&yacute; th&ocirc;ng tin, hồ sơ bệnh, lịch sử kh&aacute;m chữa bệnh, kết quả kh&aacute;m chữa bệnh&hellip;</li>
               <li>Trường hợp nhờ người kh&aacute;c đăng k&yacute; qua phần mềm, hoặc chủ động đăng k&yacute; gi&uacute;p người kh&aacute;c ( như th&acirc;n nh&acirc;n, họ h&agrave;ng, &ocirc;ng b&agrave; cha mẹ, người th&acirc;n, bạn b&egrave; , đồng nghiệp&hellip;&hellip;) vẫn c&oacute; thể được, nếu người đ&oacute; thực sự kh&ocirc;ng c&oacute; khả năng tiếp cận phần mềm. Nhưng những trường hợp n&agrave;y l&agrave; tr&aacute;i với quy định của phần mềm v&agrave; an to&agrave;n bảo mật th&ocirc;ng tin của ng&agrave;nh y, c&aacute;c vấn đề ph&aacute;t sinh, người đặt kh&aacute;m d&ugrave;m người kh&aacute;c v&agrave; người nhờ người kh&aacute;c đặt kh&aacute;m sẽ tự chịu tr&aacute;ch nhiệm trước ph&aacute;p luật.</li>
-              </ul>",
-              "status": 1,
-              "category_id": 1
+              </ul>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 105,
-              "question": "Phần mềm có hỗ trợ đăng ký khám 24/7 không?",
-              "answer": "<ul>
+              id: 105,
+              question: "Phần mềm có hỗ trợ đăng ký khám 24/7 không?",
+              answer: `<ul>
               <li>Phần mềm cho ph&eacute;p bạn thực hiện việc đăng k&yacute; kh&aacute;m v&agrave;o bất kỳ thời điểm n&agrave;o trong ng&agrave;y v&agrave; bất cứ ng&agrave;y n&agrave;o trong tuần, đảm bảo bạn c&oacute; thể sử dụng Phần mềm để đăng k&yacute; kh&aacute;m bệnh mọi l&uacute;c&nbsp;mọi nơi, m&agrave; kh&ocirc;ng cần phải đến trực tiếp&nbsp;bệnh viện để thực hiện.</li>
-              </ul>",
-              "status": 1,
-              "category_id": 1
+              </ul>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 106,
-              "question": "Sau khi đăng ký khám thành công tôi nhận được phiếu khám bệnh như thế nào?",
-              "answer": "<p>Bạn sẽ nhận được phiếu kh&aacute;m bệnh điện tử trực tiếp tr&ecirc;n phần mềm. Mục quản l&yacute; &ldquo; phiếu kh&aacute;m bệnh&rdquo;.</p>
+              id: 106,
+              question:
+                "Sau khi đăng ký khám thành công tôi nhận được phiếu khám bệnh như thế nào?",
+              answer: `<p>Bạn sẽ nhận được phiếu kh&aacute;m bệnh điện tử trực tiếp tr&ecirc;n phần mềm. Mục quản l&yacute; &ldquo; phiếu kh&aacute;m bệnh&rdquo;.</p>
               <p>&nbsp;</p>
               <p>Đồng thời bạn c&oacute; thể sử dụng t&iacute;nh năng gửi tin nhắn, để nhận th&ocirc;ng tin về phiếu kh&aacute;m bệnh được gửi qua tin nhắn điện thoại SMS.</p>
               <p>&nbsp;</p>
-              <p>Nếu hồ sơ bệnh của bạn c&oacute; khai b&aacute;o th&ocirc;ng tin email, hoặc sử dụng email để đăng nhập phần mềm, bạn cũng sẽ nhận được phiếu kh&aacute;m bệnh điện tử gửi qua email.</p>",
-              "status": 1,
-              "category_id": 1
+              <p>Nếu hồ sơ bệnh của bạn c&oacute; khai b&aacute;o th&ocirc;ng tin email, hoặc sử dụng email để đăng nhập phần mềm, bạn cũng sẽ nhận được phiếu kh&aacute;m bệnh điện tử gửi qua email.</p>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 107,
-              "question": "Có thể thanh toán trực tuyến chi phí khám chữa bệnh bằng những phương thức nào?",
-              "answer": "<ul>
+              id: 107,
+              question:
+                "Có thể thanh toán trực tuyến chi phí khám chữa bệnh bằng những phương thức nào?",
+              answer: `<ul>
               <li>Thẻ quốc tế Visa , Master ,JCB</li>
               <li>Thẻ ATM nội địa/ InternetBanking (thẻ phải được k&iacute;ch hoạt t&iacute;nh năng thanh to&aacute;n trực tuyến)</li>
               <li>V&iacute; điện tử MOMO,SMART PAY</li>
               <li>Qu&eacute;t QRCode/ Mobile Banking</li>
               <li>Thanh to&aacute;n đại l&yacute; (c&aacute;c cửa h&agrave;ng tiện lợi)</li>
               <li>Hỗ trợ thanh to&aacute;n (chuyển khoản)</li>
-              </ul>",
-              "status": 1,
-              "category_id": 1
+              </ul>`,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 108,
-              "question": "Làm sao tôi biết được là đã thanh toán thành công?",
-              "answer": "<p>Khi thanh to&aacute;n th&agrave;nh c&ocirc;ng, tiền kh&aacute;m chữa bệnh sẽ được trừ th&agrave;nh c&ocirc;ng tr&ecirc;n&nbsp; t&agrave;i khoản thanh to&aacute;n của bạn qua phương thức thanh to&aacute;n bạn đ&atilde; chọn.</p>
+              id: 108,
+              question: "Làm sao tôi biết được là đã thanh toán thành công?",
+              answer: `<p>Khi thanh to&aacute;n th&agrave;nh c&ocirc;ng, tiền kh&aacute;m chữa bệnh sẽ được trừ th&agrave;nh c&ocirc;ng tr&ecirc;n&nbsp; t&agrave;i khoản thanh to&aacute;n của bạn qua phương thức thanh to&aacute;n bạn đ&atilde; chọn.</p>
               <p>&nbsp;</p>
               <p>Đồng thời sẽ c&oacute; th&ocirc;ng tin x&aacute;c nhận giao dịch th&agrave;nh c&ocirc;ng, bi&ecirc;n lai thanh to&aacute;n, m&atilde; giao dịch, m&atilde; thanh to&aacute;n cho giao dịch th&agrave;nh c&ocirc;ng.</p>
               <p><br /> Hệ thống cũng sẽ cấp ngay phiếu kh&aacute;m bệnh điện tử khi bạn đặt kh&aacute;m th&agrave;nh c&ocirc;ng.</p>
-              ",
-              "status": 1,
-              "category_id": 1
+              `,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 109,
-              "question": "Tôi có thể đặt khám cho người nhà tôi được không?",
-              "answer": "<p>Qu&yacute; kh&aacute;ch c&oacute; thể tạo tối đa 10 hồ sơ bệnh nh&acirc;n. Qu&yacute; kh&aacute;ch đặt kh&aacute;m cho bệnh nh&acirc;n n&agrave;o th&igrave; chọn hồ sơ bệnh nh&acirc;n đ&oacute;.</p>
+              id: 109,
+              question: "Tôi có thể đặt khám cho người nhà tôi được không?",
+              answer: `<p>Qu&yacute; kh&aacute;ch c&oacute; thể tạo tối đa 10 hồ sơ bệnh nh&acirc;n. Qu&yacute; kh&aacute;ch đặt kh&aacute;m cho bệnh nh&acirc;n n&agrave;o th&igrave; chọn hồ sơ bệnh nh&acirc;n đ&oacute;.</p>
               <p>&nbsp;</p>
               <p>Phần mềm v&agrave; bệnh viện khuyến c&aacute;o, trừ trường hợp bất khả kh&aacute;ng, kh&ocirc;ng n&ecirc;n đặt d&ugrave;m cho người kh&aacute;c v&igrave; quy định an to&agrave;n bảo mật th&ocirc;ng tin sức khỏe mỗi người.</p>
               <p>&nbsp;</p>
               <p>Mọi vấn đề ph&aacute;t sinh từ việc đặt kh&aacute;m cho người kh&aacute;c, c&aacute; nh&acirc;n người đặt sẽ chịu ho&agrave;n to&agrave;n tr&aacute;ch nhiệm trước ph&aacute;p luật.</p>
-              ",
-              "status": 1,
-              "category_id": 1
+              `,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 110,
-              "question": "Đối tượng bệnh nhân nào có thể sử dụng qua phần mềm?",
-              "answer": "<p>Tất cả&nbsp;người bệnh&nbsp;đều c&oacute; thể sử dụng phần mềm&nbsp;để đăng k&yacute; kh&aacute;m bệnh trực tuyến,nếu đủ điều kiện tiếp cận v&agrave; sử dụng phần mềm.</p>
+              id: 110,
+              question: "Đối tượng bệnh nhân nào có thể sử dụng qua phần mềm?",
+              answer: `<p>Tất cả&nbsp;người bệnh&nbsp;đều c&oacute; thể sử dụng phần mềm&nbsp;để đăng k&yacute; kh&aacute;m bệnh trực tuyến,nếu đủ điều kiện tiếp cận v&agrave; sử dụng phần mềm.</p>
               <p>&nbsp;</p>
               <p>Phần mềm&nbsp;ph&ugrave; hợp&nbsp;cho những người bệnh&nbsp;c&oacute; kế hoạch kh&aacute;m chữa&nbsp;bệnh chủ động, hoặc t&igrave;nh trạng bệnh&nbsp;KH&Ocirc;NG qu&aacute; khẩn cấp.</p>
               <p>&nbsp;</p>
               <p>Trong trường hợp CẤP CỨU, người nh&agrave; n&ecirc;n đưa người bệnh&nbsp;đến cơ sở y tế gần nhất hoặc gọi số cấp cứu 115 để được hỗ trợ.</p>
-              ",
-              "status": 1,
-              "category_id": 1
+              `,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 111,
-              "question": "Sau khi đã đăng ký khám thành công qua phần mềm, có thể hủy phiếu khám không?",
-              "answer": "<p>Bạn c&oacute; thể chủ động hủy phiếu kh&aacute;m đ&atilde; đặt th&agrave;nh c&ocirc;ng, nếu kế hoạch kh&aacute;m chữa bệnh c&aacute; nh&acirc;n c&oacute; thay đổi.</p>
+              id: 111,
+              question:
+                "Sau khi đã đăng ký khám thành công qua phần mềm, có thể hủy phiếu khám không?",
+              answer: `<p>Bạn c&oacute; thể chủ động hủy phiếu kh&aacute;m đ&atilde; đặt th&agrave;nh c&ocirc;ng, nếu kế hoạch kh&aacute;m chữa bệnh c&aacute; nh&acirc;n c&oacute; thay đổi.</p>
               <p><br /> Hoặc trong 1 số trường hợp, bệnh viện c&oacute; quyền từ chối phiếu kh&aacute;m nếu c&oacute; sự sai lệch th&ocirc;ng tin bệnh nh&acirc;n, sai th&ocirc;ng tin phiếu kh&aacute;m, hoặc c&oacute; vấn đề bất khả kh&aacute;ng ph&aacute;t sinh từ ph&iacute;a bệnh viện.</p>
               <p>&nbsp;</p>
               <p>Bạn đều sẽ được ho&agrave;n tiền lại nếu chưa thực sự đặt kh&aacute;m v&agrave; kh&aacute;m th&agrave;nh c&ocirc;ng (nhưng phải tu&acirc;n theo quy định của phần mềm v&agrave; bệnh viện).</p>
-              ",
-              "status": 1,
-              "category_id": 1
+              `,
+              status: 1,
+              category_id: 1
             },
             {
-              "id": 112,
-              "question": "Tôi đến bệnh viện trễ hơn so với giờ khám đã đăng ký, vậy tôi có được khám hay không?",
-              "answer": "<p>Trường hợp bạn đến trễ so với giờ hẹn tr&ecirc;n phiếu kh&aacute;m bệnh, bạn vẫn c&oacute; thể đến bệnh viện để được thăm kh&aacute;m, nhưng mọi sự tiếp nhận v&agrave; thời gian kh&aacute;m bệnh sẽ theo sự sắp xếp của bệnh viện, t&ugrave;y v&agrave;o t&igrave;nh h&igrave;nh thực tế tại bệnh viện v&agrave; ph&ograve;ng kh&aacute;m l&uacute;c đ&oacute;.</p>
-              ",
-              "status": 1,
-              "category_id": 1
+              id: 112,
+              question:
+                "Tôi đến bệnh viện trễ hơn so với giờ khám đã đăng ký, vậy tôi có được khám hay không?",
+              answer: `<p>Trường hợp bạn đến trễ so với giờ hẹn tr&ecirc;n phiếu kh&aacute;m bệnh, bạn vẫn c&oacute; thể đến bệnh viện để được thăm kh&aacute;m, nhưng mọi sự tiếp nhận v&agrave; thời gian kh&aacute;m bệnh sẽ theo sự sắp xếp của bệnh viện, t&ugrave;y v&agrave;o t&igrave;nh h&igrave;nh thực tế tại bệnh viện v&agrave; ph&ograve;ng kh&aacute;m l&uacute;c đ&oacute;.</p>
+              `,
+              status: 1,
+              category_id: 1
             }
           ]
         },
         {
-          "id": 2,
-          "name": "Vấn đề tài khoản",
-          "faq": [
+          id: 2,
+          name: "Vấn đề tài khoản",
+          faq: [
             {
-              "id": 201,
-              "question": "Có bao nhiêu cách để đăng nhập vào phần mềm?",
-              "answer": "<p>- Đăng nhập bằng số điện thoại di động, email, mạng x&atilde; hội Zalo, Facebook.</p>
-              ",
-              "status": 1,
-              "category_id": 2
+              id: 201,
+              question: "Có bao nhiêu cách để đăng nhập vào phần mềm?",
+              answer: `<p>- Đăng nhập bằng số điện thoại di động, email, mạng x&atilde; hội Zalo, Facebook.</p>
+              `,
+              status: 1,
+              category_id: 2
             },
             {
-              "id": 202,
-              "question": "“Mã số bệnh nhân là gì “ làm sao tôi có thể biết được mã số bệnh nhân của mình?",
-              "answer": "<ul>
+              id: 202,
+              question:
+                "“Mã số bệnh nhân là gì “ làm sao tôi có thể biết được mã số bệnh nhân của mình?",
+              answer: `<ul>
               <li>M&atilde; số bệnh nh&acirc;n l&agrave;&nbsp;số hồ sơ&nbsp;m&agrave; bệnh viện d&ugrave;ng để quản l&yacute; th&ocirc;ng tin của bạn tr&ecirc;n hệ thống dữ liệu của bệnh viện.</li>
               <li>Để biết được m&atilde; số bệnh nh&acirc;n của m&igrave;nh, bạn c&oacute; thể tham khảo gợi &yacute; về c&aacute;ch t&igrave;m m&atilde; số bệnh nh&acirc;n, v&agrave; t&igrave;m thấy trong&nbsp;c&aacute;c loại giấy tờ&nbsp;như: toa thuốc, phiếu chỉ định cận l&acirc;m s&agrave;ng, c&aacute;c bi&ecirc;n lai thu tiền&hellip;</li>
               </ul>
-              ",
-              "status": 1,
-              "category_id": 2
+              `,
+              status: 1,
+              category_id: 2
             },
             {
-              "id": 203,
-              "question": "“Tôi quên mã số bệnh nhân của mình thì phải làm sao?",
-              "answer": "<p>Để t&igrave;m lại m&atilde; số bệnh nh&acirc;n, bạn c&oacute; thể xem qua gợi &yacute; về c&aacute;ch t&igrave;m lại m&atilde; số bệnh nh&acirc;n, v&agrave; t&igrave;m lại trong c&aacute;c loại giấy tờ kh&aacute;m chữa bệnh của m&igrave;nh.</p>
+              id: 203,
+              question: "“Tôi quên mã số bệnh nhân của mình thì phải làm sao?",
+              answer: `<p>Để t&igrave;m lại m&atilde; số bệnh nh&acirc;n, bạn c&oacute; thể xem qua gợi &yacute; về c&aacute;ch t&igrave;m lại m&atilde; số bệnh nh&acirc;n, v&agrave; t&igrave;m lại trong c&aacute;c loại giấy tờ kh&aacute;m chữa bệnh của m&igrave;nh.</p>
               <p>&nbsp;</p>
-              <p>Hoặc mở t&iacute;nh năng \"T&ocirc;i qu&ecirc;n m&atilde; số bệnh nh&acirc;n\" &gt; nhập ch&iacute;nh x&aacute;c c&aacute;c th&ocirc;ng tin y&ecirc;u cầu &gt; bấm&nbsp;\"X&aacute;c nhận\" &gt; v&agrave; chọn hồ sơ của m&igrave;nh trong danh s&aacute;ch kết quả.</p>
-              ",
-              "status": 1,
-              "category_id": 2
+              <p>Hoặc mở t&iacute;nh năng "T&ocirc;i qu&ecirc;n m&atilde; số bệnh nh&acirc;n" &gt; nhập ch&iacute;nh x&aacute;c c&aacute;c th&ocirc;ng tin y&ecirc;u cầu &gt; bấm&nbsp;"X&aacute;c nhận" &gt; v&agrave; chọn hồ sơ của m&igrave;nh trong danh s&aacute;ch kết quả.</p>
+              `,
+              status: 1,
+              category_id: 2
             },
             {
-              "id": 204,
-              "question": "Làm sao tôi biết bên mình đã có mã số bệnh nhân chưa?",
-              "answer": "<p>Nếu bạn đ&atilde; từng thực hiện việc&nbsp;kh&aacute;m chữa bệnh&nbsp;tại bệnh viện, đồng nghĩa với việc bạn&nbsp;đ&atilde; c&oacute; &ldquo;m&atilde; số bệnh nh&acirc;n&rdquo; tr&ecirc;n hệ thống của bệnh viện.</p>
+              id: 204,
+              question: "Làm sao tôi biết bên mình đã có mã số bệnh nhân chưa?",
+              answer: `<p>Nếu bạn đ&atilde; từng thực hiện việc&nbsp;kh&aacute;m chữa bệnh&nbsp;tại bệnh viện, đồng nghĩa với việc bạn&nbsp;đ&atilde; c&oacute; &ldquo;m&atilde; số bệnh nh&acirc;n&rdquo; tr&ecirc;n hệ thống của bệnh viện.</p>
               <p>&nbsp;</p>
-              <p>Khi đ&oacute;, h&atilde;y t&igrave;m lại m&atilde; số bệnh nh&acirc;n của bạn trong c&aacute;c loại&nbsp;giấy tờ kh&aacute;m chữa bệnh, hoặc bạn c&oacute; thể&nbsp;sử dụng t&iacute;nh năng &ldquo;T&ocirc;i qu&ecirc;n m&atilde; số bệnh nh&acirc;n&rdquo; để t&igrave;m lại m&atilde; số bệnh nh&acirc;n của m&igrave;nh ngay tr&ecirc;n phần mềm.</p>",
-              "status": 1,
-              "category_id": 2
+              <p>Khi đ&oacute;, h&atilde;y t&igrave;m lại m&atilde; số bệnh nh&acirc;n của bạn trong c&aacute;c loại&nbsp;giấy tờ kh&aacute;m chữa bệnh, hoặc bạn c&oacute; thể&nbsp;sử dụng t&iacute;nh năng &ldquo;T&ocirc;i qu&ecirc;n m&atilde; số bệnh nh&acirc;n&rdquo; để t&igrave;m lại m&atilde; số bệnh nh&acirc;n của m&igrave;nh ngay tr&ecirc;n phần mềm.</p>`,
+              status: 1,
+              category_id: 2
             },
             {
-              "id": 205,
-              "question": "Tôi có thể chọn tùy ý một hồ sơ bệnh nhân của người khác để đăng ký khám bệnh cho mình không?",
-              "answer": "<p>Trong trường hợp bạn cố t&igrave;nh hay nhầm lẫn&nbsp;d&ugrave;ng hồ sơ bệnh nh&acirc;n&nbsp;của người kh&aacute;c hoặc khai b&aacute;o sai th&ocirc;ng tin&nbsp;để đăng k&yacute; kh&aacute;m bệnh, bạn đ&atilde; vi phạm điều khoản sử dụng của phần mềm v&agrave; quy định tại bệnh viện.&nbsp;</p>
+              id: 205,
+              question:
+                "Tôi có thể chọn tùy ý một hồ sơ bệnh nhân của người khác để đăng ký khám bệnh cho mình không?",
+              answer: `<p>Trong trường hợp bạn cố t&igrave;nh hay nhầm lẫn&nbsp;d&ugrave;ng hồ sơ bệnh nh&acirc;n&nbsp;của người kh&aacute;c hoặc khai b&aacute;o sai th&ocirc;ng tin&nbsp;để đăng k&yacute; kh&aacute;m bệnh, bạn đ&atilde; vi phạm điều khoản sử dụng của phần mềm v&agrave; quy định tại bệnh viện.&nbsp;</p>
               <p><br /> Bệnh viện sẽ từ chối kh&aacute;m chữa bệnh, bạn sẽ chịu ho&agrave;n to&agrave;n những thiệt hại v&agrave; t&ugrave;y mức độ c&oacute; thể chịu tr&aacute;ch nhiệm trước&nbsp;ph&aacute;p luật.</p>
               <p>&nbsp;</p>
-              <p>V&igrave; vậy,&nbsp;khi đăng k&yacute; kh&aacute;m bệnh bạn vui l&ograve;ng chọn/nhập v&agrave; kiểm tra&nbsp;ch&iacute;nh x&aacute;c&nbsp;hồ sơ&nbsp;bệnh nh&acirc;n của m&igrave;nh!</p>",
-              "status": 1,
-              "category_id": 2
+              <p>V&igrave; vậy,&nbsp;khi đăng k&yacute; kh&aacute;m bệnh bạn vui l&ograve;ng chọn/nhập v&agrave; kiểm tra&nbsp;ch&iacute;nh x&aacute;c&nbsp;hồ sơ&nbsp;bệnh nh&acirc;n của m&igrave;nh!</p>`,
+              status: 1,
+              category_id: 2
             }
           ]
         },
         {
-          "id": 3,
-          "name": "Vấn đề về quy trình đặt khám",
-          "faq": [
+          id: 3,
+          name: "Vấn đề về quy trình đặt khám",
+          faq: [
             {
-              "id": 301,
-              "question": "Có thể đăng ký khám bệnh trong ngày bằng phần mềm không?",
-              "answer": "<p>Hiện tại bệnh viện hỗ trợ cả đặt kh&aacute;m đăng k&yacute; trong ng&agrave;y, cho ph&eacute;p đặt kh&aacute;m trước 30 ph&uacute;t. Nhưng bạn kh&ocirc;ng được huỷ phiếu kh&aacute;m trong ng&agrave;y.</p>",
-              "status": 1,
-              "category_id": 3
+              id: 301,
+              question:
+                "Có thể đăng ký khám bệnh trong ngày bằng phần mềm không?",
+              answer: `<p>Hiện tại bệnh viện hỗ trợ cả đặt kh&aacute;m đăng k&yacute; trong ng&agrave;y, cho ph&eacute;p đặt kh&aacute;m trước 30 ph&uacute;t. Nhưng bạn kh&ocirc;ng được huỷ phiếu kh&aacute;m trong ng&agrave;y.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 302,
-              "question": "Có thể đăng ký khám bệnh trong khoảng thời gian nào?",
-              "answer": "<p>Bạn c&oacute; thể đăng k&yacute; kh&aacute;m bệnh qua phần mềm, mọi l&uacute;c mọi nơi. C&oacute; thể đặt lịch hẹn kh&aacute;m bệnh trước ng&agrave;y kh&aacute;m đến 30 ng&agrave;y.&nbsp;</p>",
-              "status": 1,
-              "category_id": 3
+              id: 302,
+              question: "Có thể đăng ký khám bệnh trong khoảng thời gian nào?",
+              answer: `<p>Bạn c&oacute; thể đăng k&yacute; kh&aacute;m bệnh qua phần mềm, mọi l&uacute;c mọi nơi. C&oacute; thể đặt lịch hẹn kh&aacute;m bệnh trước ng&agrave;y kh&aacute;m đến 30 ng&agrave;y.&nbsp;</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 303,
-              "question": "Khi đi khám bệnh, tôi có cần chuẩn bị gì không?",
-              "answer": "<p><strong>Đối với Người bệnh c&oacute; thẻ Bảo hiểm y tế:</strong></p>
+              id: 303,
+              question: "Khi đi khám bệnh, tôi có cần chuẩn bị gì không?",
+              answer: `<p><strong>Đối với Người bệnh c&oacute; thẻ Bảo hiểm y tế:</strong></p>
               <p><br /> Vui l&ograve;ng mang thẻ BHYT v&agrave; giấy tờ tuỳ th&acirc;n, v&agrave; đến cửa tiếp nhận số 1trước hẹn 15 ph&uacute;t để được hướng dẫn v&agrave;o ph&ograve;ng kh&aacute;m.</p>
               <p>&nbsp;</p>
               <p><strong>Đối với Người bệnh KH&Ocirc;NG c&oacute; thẻ Bảo hiểm y tế:</strong></p>
-              <p><br /> Bệnh nh&acirc;n vui l&ograve;ng đến trước giờ hẹn 15 ph&uacute;t, xuất tr&igrave;nh phiếu kh&aacute;m bệnh điện tử v&agrave; giấy tờ t&ugrave;y th&acirc;n để được hướng dẫn v&agrave;o ph&ograve;ng kh&aacute;m bệnh.</p>",
-              "status": 1,
-              "category_id": 3
+              <p><br /> Bệnh nh&acirc;n vui l&ograve;ng đến trước giờ hẹn 15 ph&uacute;t, xuất tr&igrave;nh phiếu kh&aacute;m bệnh điện tử v&agrave; giấy tờ t&ugrave;y th&acirc;n để được hướng dẫn v&agrave;o ph&ograve;ng kh&aacute;m bệnh.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 304,
-              "question": "Tôi có việc đột xuất hoặc bận không đến khám được, tôi muốn huỷ phiếu khám có được không?",
-              "answer": "<p>Qu&yacute; kh&aacute;ch chủ động thực hiện việc hủy phiếu tr&ecirc;n phần mềm.</p>
+              id: 304,
+              question:
+                "Tôi có việc đột xuất hoặc bận không đến khám được, tôi muốn huỷ phiếu khám có được không?",
+              answer: `<p>Qu&yacute; kh&aacute;ch chủ động thực hiện việc hủy phiếu tr&ecirc;n phần mềm.</p>
               <p>&nbsp;</p>
               <p>Tiền kh&aacute;m bệnh sẽ ho&agrave;n lại t&agrave;i khoản của bệnh nh&acirc;n&nbsp;đ&atilde; sử dụng&nbsp;thanh to&aacute;n. Ph&iacute; tiện &iacute;ch sẽ kh&ocirc;ng được ho&agrave;n trả.</p>
               <p>&nbsp;</p>
@@ -506,177 +532,198 @@
               <p>&nbsp;</p>
               <p>Thẻ thanh to&aacute;n&nbsp;quốc tế&nbsp;(Visa/MasterCard&hellip;): từ&nbsp;05 đến 45&nbsp;ng&agrave;y l&agrave;m việc.</p>
               <p>&nbsp;</p>
-              <p>Trường hợp kh&aacute;ch h&agrave;ng thanh to&aacute;n bằng c&aacute;c cửa h&agrave;ng tiện lợi m&agrave; muốn huỷ phiếu kh&aacute;m bệnh,kh&aacute;ch h&agrave;ng vui l&ograve;ng đến cửa h&agrave;ng tiện lợi cung cấp đầy đủ th&ocirc;ng tin v&agrave; cửa h&agrave;ng sẽ kiểm tra ho&agrave;n tiền lại (Tuỳ theo cửa h&agrave;ng c&oacute; thể nhanh hoặc chậm).</p>",
-              "status": 1,
-              "category_id": 3
+              <p>Trường hợp kh&aacute;ch h&agrave;ng thanh to&aacute;n bằng c&aacute;c cửa h&agrave;ng tiện lợi m&agrave; muốn huỷ phiếu kh&aacute;m bệnh,kh&aacute;ch h&agrave;ng vui l&ograve;ng đến cửa h&agrave;ng tiện lợi cung cấp đầy đủ th&ocirc;ng tin v&agrave; cửa h&agrave;ng sẽ kiểm tra ho&agrave;n tiền lại (Tuỳ theo cửa h&agrave;ng c&oacute; thể nhanh hoặc chậm).</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 305,
-              "question": "Tôi có thể thay đổi thông tin khám đã đặt qua phần mềm không?",
-              "answer": "<p>Bạn kh&ocirc;ng thể thay đổi th&ocirc;ng tin kh&aacute;m tr&ecirc;n phiếu kh&aacute;m bệnh đ&atilde; đặt th&agrave;nh c&ocirc;ng.</p>",
-              "status": 1,
-              "category_id": 3
+              id: 305,
+              question:
+                "Tôi có thể thay đổi thông tin khám đã đặt qua phần mềm không?",
+              answer: `<p>Bạn kh&ocirc;ng thể thay đổi th&ocirc;ng tin kh&aacute;m tr&ecirc;n phiếu kh&aacute;m bệnh đ&atilde; đặt th&agrave;nh c&ocirc;ng.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 306,
-              "question": "Phần mềm có cho đăng ký khám bệnh với đối tượng bệnh nhân bhyt không?",
-              "answer": "<p>Hiện tại bệnh viện chỉ hỗ trợ bệnh nh&acirc;n đăng k&yacute; kh&aacute;m dịch vụ qua ứng dụng.</p>",
-              "status": 1,
-              "category_id": 3
+              id: 306,
+              question:
+                "Phần mềm có cho đăng ký khám bệnh với đối tượng bệnh nhân bhyt không?",
+              answer: `<p>Hiện tại bệnh viện chỉ hỗ trợ bệnh nh&acirc;n đăng k&yacute; kh&aacute;m dịch vụ qua ứng dụng.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 307,
-              "question": "Nếu bác sĩ thay đổi lịch khám, tôi phải làm sao?",
-              "answer": "<p>Khi b&aacute;c sĩ thay đổi lịch kh&aacute;m, phần mềm sẽ gửi th&ocirc;ng b&aacute;o cho bạn qua tin nhắn sms, email v&agrave; tr&ecirc;n ứng dụng.Khi nhận được th&ocirc;ng b&aacute;o về sự thay đổi. Bạn c&oacute; thể:</p>
+              id: 307,
+              question: "Nếu bác sĩ thay đổi lịch khám, tôi phải làm sao?",
+              answer: `<p>Khi b&aacute;c sĩ thay đổi lịch kh&aacute;m, phần mềm sẽ gửi th&ocirc;ng b&aacute;o cho bạn qua tin nhắn sms, email v&agrave; tr&ecirc;n ứng dụng.Khi nhận được th&ocirc;ng b&aacute;o về sự thay đổi. Bạn c&oacute; thể:</p>
               <ul>
               <li>Hủy Phiếu Kh&aacute;m Bệnh để nhận lại tiền kh&aacute;m theo quy định ho&agrave;n tiền.</li>
               <li>Vẫn giữ nguy&ecirc;n th&ocirc;ng tin tr&ecirc;n Phiếu Kh&aacute;m Bệnh, v&agrave; điều n&agrave;y đồng nghĩa với việc bạn chấp nhận kh&aacute;m với b&aacute;c sĩ thay thế m&agrave; bệnh viện đ&atilde; sắp xếp.</li>
-              <li>Thay đổi th&ocirc;ng tin kh&aacute;m tr&ecirc;n phiếu kh&aacute;m bệnh, bằng c&aacute;ch: Đăng nhập phần mềm &gt; Th&ocirc;ng Tin T&agrave;i Khoản &gt; Quản l&yacute; phiếu kh&aacute;m bệnh &gt; chọn v&agrave;o phiếu kh&aacute;m bệnh bị thay đổi lịch kh&aacute;m &gt; bấm \"Chỉnh sửa\".</li>
+              <li>Thay đổi th&ocirc;ng tin kh&aacute;m tr&ecirc;n phiếu kh&aacute;m bệnh, bằng c&aacute;ch: Đăng nhập phần mềm &gt; Th&ocirc;ng Tin T&agrave;i Khoản &gt; Quản l&yacute; phiếu kh&aacute;m bệnh &gt; chọn v&agrave;o phiếu kh&aacute;m bệnh bị thay đổi lịch kh&aacute;m &gt; bấm "Chỉnh sửa".</li>
               </ul>
-              <p>Việc thay đổi th&ocirc;ng tin tr&ecirc;n phiếu kh&aacute;m bệnh phải được thực hiện theo Quy định chỉnh sửa th&ocirc;ng tin tr&ecirc;n phiếu kh&aacute;m bệnh.</p>",
-              "status": 1,
-              "category_id": 3
+              <p>Việc thay đổi th&ocirc;ng tin tr&ecirc;n phiếu kh&aacute;m bệnh phải được thực hiện theo Quy định chỉnh sửa th&ocirc;ng tin tr&ecirc;n phiếu kh&aacute;m bệnh.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 308,
-              "question": "Làm sao có thể chọn đúng chuyên khoa để đăng ký khám qua phần mềm?",
-              "answer": "<p>Trường hợp t&aacute;i kh&aacute;m, bạn chỉ việc chọn đ&uacute;ng chuy&ecirc;n khoa của lần kh&aacute;m trước.</p>
+              id: 308,
+              question:
+                "Làm sao có thể chọn đúng chuyên khoa để đăng ký khám qua phần mềm?",
+              answer: `<p>Trường hợp t&aacute;i kh&aacute;m, bạn chỉ việc chọn đ&uacute;ng chuy&ecirc;n khoa của lần kh&aacute;m trước.</p>
               <p>Trường hợp kh&aacute;m mới:</p>
               <ul>
               <li>Nếu biết chắc chuy&ecirc;n khoa m&igrave;nh muốn đăng k&yacute; kh&aacute;m, bạn chỉ việc t&igrave;m&nbsp;chọn chuy&ecirc;n khoa đ&oacute; trong danh s&aacute;ch.</li>
-              <li>Nếu&nbsp;chưa biết chuy&ecirc;n khoa n&agrave;o ph&ugrave; hợp, bạn&nbsp;c&oacute; thể gọi v&agrave;o tổng đ&agrave;i tư vấn chăm s&oacute;c kh&aacute;ch h&agrave;ng của bệnh viện hoặc tổng đ&agrave;i medpro&nbsp;<strong>19002267</strong> hoặc li&ecirc;n hệ hỗ trợ tại k&ecirc;nh chat mạng x&atilde; hội facebook, zalo.</li>
-              </ul>",
-              "status": 1,
-              "category_id": 3
+              <li>Nếu&nbsp;chưa biết chuy&ecirc;n khoa n&agrave;o ph&ugrave; hợp, bạn&nbsp;c&oacute; thể gọi v&agrave;o tổng đ&agrave;i tư vấn chăm s&oacute;c kh&aacute;ch h&agrave;ng của bệnh viện hoặc tổng đ&agrave;i medpro&nbsp;<strong>19007178</strong> hoặc li&ecirc;n hệ hỗ trợ tại k&ecirc;nh chat mạng x&atilde; hội facebook, zalo.</li>
+              </ul>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 309,
-              "question": "Tôi sẽ được khám bệnh vào đúng thời gian đã chọn, sau khi đăng ký khám qua phần mềm đúng không?",
-              "answer": "<p>Trả lời: C&oacute; thể.</p>
-              <p>Thời gian bạn chọn khi đăng k&yacute; kh&aacute;m, được xem l&agrave; thời gian kh&aacute;m bệnh dự kiến. Do đặc th&ugrave; của c&ocirc;ng t&aacute;c kh&aacute;m chữa bệnh, sẽ kh&ocirc;ng thể ch&iacute;nh x&aacute;c thời gian kh&aacute;m 100%.</p>",
-              "status": 1,
-              "category_id": 3
+              id: 309,
+              question:
+                "Tôi sẽ được khám bệnh vào đúng thời gian đã chọn, sau khi đăng ký khám qua phần mềm đúng không?",
+              answer: `<p>Trả lời: C&oacute; thể.</p>
+              <p>Thời gian bạn chọn khi đăng k&yacute; kh&aacute;m, được xem l&agrave; thời gian kh&aacute;m bệnh dự kiến. Do đặc th&ugrave; của c&ocirc;ng t&aacute;c kh&aacute;m chữa bệnh, sẽ kh&ocirc;ng thể ch&iacute;nh x&aacute;c thời gian kh&aacute;m 100%.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 310,
-              "question": "Tôi đăng ký đã bị trừ tiền nhưng sao không nhận được mã số khám bệnh?",
-              "answer": "<p>Bạn vui l&ograve;ng kiểm tra th&ocirc;ng tin phiếu kh&aacute;m trong t&agrave;i khoản tr&ecirc;n phần mềm. Hoặc vui l&ograve;ng gọi điện tổng đ&agrave;i 19002267 để được hỗ trợ.</p>",
-              "status": 1,
-              "category_id": 3
+              id: 310,
+              question:
+                "Tôi đăng ký đã bị trừ tiền nhưng sao không nhận được mã số khám bệnh?",
+              answer: `<p>Bạn vui l&ograve;ng kiểm tra th&ocirc;ng tin phiếu kh&aacute;m trong t&agrave;i khoản tr&ecirc;n phần mềm. Hoặc vui l&ograve;ng gọi điện tổng đ&agrave;i 19002267 để được hỗ trợ.</p>`,
+              status: 1,
+              category_id: 3
             },
             {
-              "id": 311,
-              "question": "Tôi đã đăng ký thành công vậy khi đi khám tôi có phải xếp hàng gì không?",
-              "answer": "<p>Kh&ocirc;ng, bạn kh&ocirc;ng c&ograve;n phải xếp h&agrave;ng chờ đợi để lấy số kh&aacute;m bệnh, l&agrave;m thủ tục đ&oacute;ng tiền, bạn chỉ cần đến cửa tiếp nhận số 1 để được hướng dẫn v&agrave;o ph&ograve;ng kh&aacute;m.</p>",
-              "status": 1,
-              "category_id": 3
+              id: 311,
+              question:
+                "Tôi đã đăng ký thành công vậy khi đi khám tôi có phải xếp hàng gì không?",
+              answer: `<p>Kh&ocirc;ng, bạn kh&ocirc;ng c&ograve;n phải xếp h&agrave;ng chờ đợi để lấy số kh&aacute;m bệnh, l&agrave;m thủ tục đ&oacute;ng tiền, bạn chỉ cần đến cửa tiếp nhận số 1 để được hướng dẫn v&agrave;o ph&ograve;ng kh&aacute;m.</p>`,
+              status: 1,
+              category_id: 3
             }
           ]
         },
         {
-          "id": 4,
-          "name": "Vấn đề về thanh toán",
-          "faq": [
+          id: 4,
+          name: "Vấn đề về thanh toán",
+          faq: [
             {
-              "id": 401,
-              "question": "Điều kiện để được hoàn tiền là gì?",
-              "answer": "<p>Bạn chỉ được ho&agrave;n tiền khi thực hiện th&agrave;nh c&ocirc;ng y&ecirc;u cầu Hủy Phiếu Kh&aacute;m Bệnh tr&ecirc;n phần mềm theo theo quy định.</p>",
-              "status": 1,
-              "category_id": 4
+              id: 401,
+              question: "Điều kiện để được hoàn tiền là gì?",
+              answer: `<p>Bạn chỉ được ho&agrave;n tiền khi thực hiện th&agrave;nh c&ocirc;ng y&ecirc;u cầu Hủy Phiếu Kh&aacute;m Bệnh tr&ecirc;n phần mềm theo theo quy định.</p>`,
+              status: 1,
+              category_id: 4
             },
             {
-              "id": 402,
-              "question": "Hoàn tiền như thế nào? Bao lâu thì tôi nhận lại được tiền hoàn?",
-              "answer": "<p>Khi bạn thực hiện việc&nbsp;thanh to&aacute;n bằng phương thức n&agrave;o, th&igrave; phần mềm sẽ ho&agrave;n tiền&nbsp;lại cho bạn&nbsp;bằng&nbsp;đ&uacute;ng phương thức v&agrave; số t&agrave;i khoản&nbsp;đ&atilde; d&ugrave;ng để thanh to&aacute;n đ&oacute;.</p>
+              id: 402,
+              question:
+                "Hoàn tiền như thế nào? Bao lâu thì tôi nhận lại được tiền hoàn?",
+              answer: `<p>Khi bạn thực hiện việc&nbsp;thanh to&aacute;n bằng phương thức n&agrave;o, th&igrave; phần mềm sẽ ho&agrave;n tiền&nbsp;lại cho bạn&nbsp;bằng&nbsp;đ&uacute;ng phương thức v&agrave; số t&agrave;i khoản&nbsp;đ&atilde; d&ugrave;ng để thanh to&aacute;n đ&oacute;.</p>
               <p>Thời gian bạn nhận được&nbsp;tiền ho&agrave;n th&ocirc;ng thường được quy định như sau:</p>
               <ul>
               <li>Thẻ kh&aacute;m bệnh:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 - 30 ng&agrave;y l&agrave;m việc.</li>
               <li>Thẻ ATM nội địa:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 - 30 ng&agrave;y l&agrave;m việc.</li>
               <li>Thẻ t&iacute;n dụng Visa, MasterCard:&nbsp; &nbsp; &nbsp; &nbsp; 1 - 45 ng&agrave;y l&agrave;m việc.</li>
               </ul>
-              <p>T&iacute;nh từ thời điểm bạn thực hiện Hủy Phiếu Kh&aacute;m Bệnh th&agrave;nh c&ocirc;ng, nếu qu&aacute; thời gian tr&ecirc;n bạn vẫn chưa nhận được tiền ho&agrave;n, vui l&ograve;ng li&ecirc;n hệ tổng đ&agrave;i 1900 2267 ch&uacute;ng t&ocirc;i sẽ hỗ&nbsp;trợ bạn.</p>",
-              "status": 1,
-              "category_id": 4
+              <p>T&iacute;nh từ thời điểm bạn thực hiện Hủy Phiếu Kh&aacute;m Bệnh th&agrave;nh c&ocirc;ng, nếu qu&aacute; thời gian tr&ecirc;n bạn vẫn chưa nhận được tiền ho&agrave;n, vui l&ograve;ng li&ecirc;n hệ tổng đ&agrave;i 1900 2267 ch&uacute;ng t&ocirc;i sẽ hỗ&nbsp;trợ bạn.</p>`,
+              status: 1,
+              category_id: 4
             },
             {
-              "id": 403,
-              "question": "Tôi không có bất kỳ một thẻ khám bệnh hoặc thẻ ngân hàng nào để thanh toán, vậy tôi phải làm sao?",
-              "answer": "<p>&nbsp;Bạn c&oacute; thể li&ecirc;n hệ nh&acirc;n vi&ecirc;n bệnh viện&nbsp;tại c&aacute;c quầy hướng dẫn trong bệnh viện để được hỗ trợ l&agrave;m&nbsp;thẻ kh&aacute;m bệnh&nbsp;miễn ph&iacute;.</p>
+              id: 403,
+              question:
+                "Tôi không có bất kỳ một thẻ khám bệnh hoặc thẻ ngân hàng nào để thanh toán, vậy tôi phải làm sao?",
+              answer: `<p>&nbsp;Bạn c&oacute; thể li&ecirc;n hệ nh&acirc;n vi&ecirc;n bệnh viện&nbsp;tại c&aacute;c quầy hướng dẫn trong bệnh viện để được hỗ trợ l&agrave;m&nbsp;thẻ kh&aacute;m bệnh&nbsp;miễn ph&iacute;.</p>
               <p>Nhờ con,ch&aacute;u hoặc người th&acirc;n trong gia đ&igrave;nh c&oacute; sử dụng c&aacute;c phương thức thanh to&aacute;n trực tuyến để đặt kh&aacute;m.</p>
-              <p>Đăng k&yacute; mới một trong c&aacute;c phương thức thanh to&aacute;n trực tuyến c&oacute; hỗ trợ ngay, để tiếp tục sử dụng trong tương lai.</p>",
-              "status": 1,
-              "category_id": 4
+              <p>Đăng k&yacute; mới một trong c&aacute;c phương thức thanh to&aacute;n trực tuyến c&oacute; hỗ trợ ngay, để tiếp tục sử dụng trong tương lai.</p>`,
+              status: 1,
+              category_id: 4
             },
             {
-              "id": 404,
-              "question": "Thông tin thanh toán của tôi có bị lộ khi tôi tiến hành thanh toán trên phần mềm không?",
-              "answer": "<p>Trả lời : Kh&ocirc;ng!</p>
+              id: 404,
+              question:
+                "Thông tin thanh toán của tôi có bị lộ khi tôi tiến hành thanh toán trên phần mềm không?",
+              answer: `<p>Trả lời : Kh&ocirc;ng!</p>
               <p>Phần mềm&nbsp;v&agrave; bệnh viện ho&agrave;n to&agrave;n kh&ocirc;ng thể sao lưu lại&nbsp;bất kỳ th&ocirc;ng tin thanh to&aacute;n n&agrave;o của bạn.</p>
-              <p>C&aacute;c th&ocirc;ng tin của bạn được bảo mật tại cổng thanh to&aacute;n v&agrave; ng&acirc;n h&agrave;ng nh&agrave; nước việt nam.</p>",
-              "status": 1,
-              "category_id": 4
+              <p>C&aacute;c th&ocirc;ng tin của bạn được bảo mật tại cổng thanh to&aacute;n v&agrave; ng&acirc;n h&agrave;ng nh&agrave; nước việt nam.</p>`,
+              status: 1,
+              category_id: 4
             },
             {
-              "id": 405,
-              "question": "Tôi đăng nhập đúng tên tài khoản nhưng không thanh toán được?",
-              "answer": "<ul>
+              id: 405,
+              question:
+                "Tôi đăng nhập đúng tên tài khoản nhưng không thanh toán được?",
+              answer: `<ul>
               <li>Đối với thẻ kh&aacute;m bệnh/ATM nội địa phải đảm bảo đ&atilde; k&iacute;ch hoạt t&iacute;nh năng thanh to&aacute;n trực tuyến th&igrave; mới c&oacute; thể thanh to&aacute;n được. Nếu thẻ của bạn chưa k&iacute;ch hoạt Thanh to&aacute;n trực tuyến th&igrave; vui l&ograve;ng li&ecirc;n hệ với ng&acirc;n h&agrave;ng ph&aacute;t h&agrave;nh thẻ của bạn để đăng k&yacute;.</li>
               <li>Nếu thẻ của bạn đ&atilde; đăng k&yacute; thanh to&aacute;n trực tuyến v&agrave; nhập ch&iacute;nh x&aacute;c th&ocirc;ng tin thanh to&aacute;n nhưng vẫn kh&ocirc;ng thanh to&aacute;n được, vui l&ograve;ng li&ecirc;n hệ 19002267 ch&uacute;ng t&ocirc;i sẽ hỗ trợ bạn.</li>
-              </ul>",
-              "status": 1,
-              "category_id": 4
+              </ul>`,
+              status: 1,
+              category_id: 4
             },
             {
-              "id": 406,
-              "question": "Tôi muốn đăng ký khám online nhưng đến trực tiếp bệnh viện để thanh toán được không?",
-              "answer": "Trả lời : không
+              id: 406,
+              question:
+                "Tôi muốn đăng ký khám online nhưng đến trực tiếp bệnh viện để thanh toán được không?",
+              answer: `Trả lời : không
 
-              Hiện tại khi đặt khám trên phần mềm bạn vui lòng hoàn tất quy trình thanh toán ngay trên phần mềm để được nhận phiếu khám bệnh.",
-              "status": 1,
-              "category_id": 4
+              Hiện tại khi đặt khám trên phần mềm bạn vui lòng hoàn tất quy trình thanh toán ngay trên phần mềm để được nhận phiếu khám bệnh.`,
+              status: 1,
+              category_id: 4
             },
             {
-              "id": 407,
-              "question": "Tôi nhập tài khoản thẻ nhưng bấm xác thực hoài không được?",
-              "answer": "<p>Vui lòng ki&ecirc;̉m tra ch&iacute;nh x&aacute;c th&ocirc;ng tin thẻ đ&atilde; nhập. Trường hợp vẫn bị lỗi, h&atilde;y chụp ảnh m&agrave;n h&igrave;nh b&aacute;o lỗi v&agrave; gửi qua c&aacute;c k&ecirc;nh hỗ trợ, ch&uacute;ng t&ocirc;i sẽ hỗ trợ bạn.</p>",
-              "status": 1,
-              "category_id": 4
+              id: 407,
+              question:
+                "Tôi nhập tài khoản thẻ nhưng bấm xác thực hoài không được?",
+              answer: `<p>Vui lòng ki&ecirc;̉m tra ch&iacute;nh x&aacute;c th&ocirc;ng tin thẻ đ&atilde; nhập. Trường hợp vẫn bị lỗi, h&atilde;y chụp ảnh m&agrave;n h&igrave;nh b&aacute;o lỗi v&agrave; gửi qua c&aacute;c k&ecirc;nh hỗ trợ, ch&uacute;ng t&ocirc;i sẽ hỗ trợ bạn.</p>`,
+              status: 1,
+              category_id: 4
             }
           ]
         }
       ],
-      "sortOrder": 5,
-      "icon": "fal fa-question-circle"
+      sortOrder: 5,
+      icon: "fal fa-question-circle"
     },
     {
-      "key": "lien-he",
-      "link": "/lien-he",
-      "url": "/lien-he",
-      "name": "Liên hệ",
-      "content": "Nội dung liên hệ",
-      "sortOrder": 6,
-      "icon": "fal fa-phone"
+      key: "lien-he",
+      link: "/lien-he",
+      url: "/lien-he",
+      name: "Liên hệ",
+      content: "Nội dung liên hệ",
+      sortOrder: 6,
+      icon: "fal fa-phone"
     }
   ],
-  "menuFooter": [
+  menuFooter: [
     {
-      "key": "lien-he",
-      "link": "/lien-he",
-      "url": "/lien-he",
-      "name": "Liên hệ",
-      "content": "Nội dung liên hệ",
-      "sortOrder": 1,
-      "icon": "fal fa-phone"
+      key: "lien-he",
+      link: "/lien-he",
+      url: "/lien-he",
+      name: "Liên hệ",
+      content: "Nội dung liên hệ",
+      sortOrder: 1,
+      icon: "fal fa-phone"
     },
+    // {
+    //   key: "thac-mac",
+    //   link: "/thac-mac",
+    //   url: "/thac-mac",
+    //   name: "Thắc mắc",
+    //   content: "Nội dung thắc mắc",
+    //   sortOrder: 2,
+    //   icon: "fal fa-question-circle"
+    // },
     {
-      "key": "dieu-khoan-dich-vu",
-      "link": "/dieu-khoan-dich-vu",
-      "url": "/dieu-khoan-dich-vu",
-      "name": "Điều khoản dịch vụ",
-      "content": "
+      key: "dieu-khoan-dich-vu",
+      link: "/dieu-khoan-dich-vu",
+      url: "/dieu-khoan-dich-vu",
+      name: "Điều khoản dịch vụ",
+      content: `
       <p><strong>GIỚI THIỆU</strong></p>
       <ul>
-      <li>Ch&agrave;o mừng bạn đến với&nbsp;phần mềm Đăng K&yacute; Kh&aacute;m Bệnh Trực Tuyến&nbsp;tại Bệnh viện đa khoa khu vực tỉnh An Giang&nbsp;(gọi chung l&agrave;&nbsp;\"Phần mềm\"). Vui l&ograve;ng đọc kỹ c&aacute;c Điều Khoản Dịch Vụ sau đ&acirc;y trước khi tiếp tục truy cập hoặc sử dụng c&aacute;c dịch vụ của Phần mềm, để bạn biết được c&aacute;c quyền lợi v&agrave; nghĩa vụ hợp ph&aacute;p của m&igrave;nh li&ecirc;n quan đến C&ocirc;ng ty cổ phần ứng dụng PKH v&agrave; bệnh viện đa khoa khu vực tỉnh An Giang v&agrave; c&aacute;c b&ecirc;n thứ ba c&oacute; li&ecirc;n kết &nbsp;(gọi chung l&agrave;&nbsp;&ldquo;ch&uacute;ng t&ocirc;i&rdquo; hoặc &ldquo;của ch&uacute;ng t&ocirc;i&rdquo;).</li>
+      <li>Ch&agrave;o mừng bạn đến với&nbsp;phần mềm Đăng K&yacute; Kh&aacute;m Bệnh Trực Tuyến&nbsp;tại Bệnh viện Trưng Vương&nbsp;(gọi chung l&agrave;&nbsp;"Phần mềm"). Vui l&ograve;ng đọc kỹ c&aacute;c Điều Khoản Dịch Vụ sau đ&acirc;y trước khi tiếp tục truy cập hoặc sử dụng c&aacute;c dịch vụ của Phần mềm, để bạn biết được c&aacute;c quyền lợi v&agrave; nghĩa vụ hợp ph&aacute;p của m&igrave;nh li&ecirc;n quan đến C&ocirc;ng ty cổ phần ứng dụng PKH v&agrave; bệnh viện Trưng Vương v&agrave; c&aacute;c b&ecirc;n thứ ba c&oacute; li&ecirc;n kết &nbsp;(gọi chung l&agrave;&nbsp;&ldquo;ch&uacute;ng t&ocirc;i&rdquo; hoặc &ldquo;của ch&uacute;ng t&ocirc;i&rdquo;).</li>
       <li>&ldquo;C&aacute;c Dịch Vụ&rdquo; ch&uacute;ng t&ocirc;i cung cấp hoặc ph&aacute;t h&agrave;nh bao gồm:</li>
       <ul>
       <li>Phần mềm n&agrave;y,</li>
@@ -820,23 +867,23 @@
       <li>Bạn kh&ocirc;ng được chuyển nhượng, cấp ph&eacute;p con hay chuyển giao bất kỳ quyền n&agrave;o đ&atilde; cấp cho bạn theo đ&acirc;y hoặc lập hợp đồng phụ bất kỳ nghĩa vụ n&agrave;o của bạn.</li>
       <li>Kh&ocirc;ng nội dung n&agrave;o trong c&aacute;c Điều Khoản Dịch Vụ n&agrave;y sẽ cấu th&agrave;nh sự hợp t&aacute;c, li&ecirc;n doanh hay quan hệ người ủy th&aacute;c - đại l&yacute; giữa bạn v&agrave; Ch&uacute;ng t&ocirc;i, cũng kh&ocirc;ng cho ph&eacute;p bạn chịu bất kỳ chi ph&iacute; hay tr&aacute;ch nhiệm ph&aacute;p l&yacute; n&agrave;o thay mặt Ch&uacute;ng t&ocirc;i.</li>
       </ul>
-      <p>Điều Khoản Dịch Vụ n&agrave;y l&agrave; một phần kh&ocirc;ng t&aacute;ch rời với&nbsp;Ch&iacute;nh S&aacute;ch Bảo Mật&nbsp;<a href=\"https://medpro.com.vn/private\">v</a>&agrave;<a href=\"https://medpro.com.vn/private\">&nbsp;</a>Quy Định Sử Dụng Phần Mềm&nbsp;của ch&uacute;ng t&ocirc;i. Xin vui l&ograve;ng đọc th&ecirc;m c&aacute;c Ch&iacute;nh S&aacute;ch Bảo Mật&nbsp;<a href=\"https://medpro.com.vn/private\">v</a>&agrave;<a href=\"https://medpro.com.vn/private\">&nbsp;</a>Quy Định Sử Dụng Phần Mềm&nbsp;để hiểu r&otilde; c&aacute;c quy định, điều khoản, ch&iacute;nh s&aacute;ch v&agrave; hướng dẫn của ch&uacute;ng t&ocirc;i trước khi bạn truy cập Phần mềm v&agrave;/hoặc đăng k&yacute; v&agrave;/hoặc sử dụng c&aacute;c Dịch Vụ tr&ecirc;n Phần mềm của ch&uacute;ng t&ocirc;i.</p>
+      <p>Điều Khoản Dịch Vụ n&agrave;y l&agrave; một phần kh&ocirc;ng t&aacute;ch rời với&nbsp;Ch&iacute;nh S&aacute;ch Bảo Mật&nbsp;<a href="https://medpro.com.vn/private">v</a>&agrave;<a href="https://medpro.com.vn/private">&nbsp;</a>Quy Định Sử Dụng Phần Mềm&nbsp;của ch&uacute;ng t&ocirc;i. Xin vui l&ograve;ng đọc th&ecirc;m c&aacute;c Ch&iacute;nh S&aacute;ch Bảo Mật&nbsp;<a href="https://medpro.com.vn/private">v</a>&agrave;<a href="https://medpro.com.vn/private">&nbsp;</a>Quy Định Sử Dụng Phần Mềm&nbsp;để hiểu r&otilde; c&aacute;c quy định, điều khoản, ch&iacute;nh s&aacute;ch v&agrave; hướng dẫn của ch&uacute;ng t&ocirc;i trước khi bạn truy cập Phần mềm v&agrave;/hoặc đăng k&yacute; v&agrave;/hoặc sử dụng c&aacute;c Dịch Vụ tr&ecirc;n Phần mềm của ch&uacute;ng t&ocirc;i.</p>
       <p>T&ocirc;i đ&atilde; đọc thỏa thuận n&agrave;y v&agrave; đồng &yacute; với tất cả c&aacute;c quy định c&oacute; trong nội dung b&ecirc;n tr&ecirc;n v&agrave; bất kỳ bản chỉnh sửa n&agrave;o của nội dung b&ecirc;n tr&ecirc;n sau n&agrave;y. bằng việc tiếp tục truy cập v&agrave; sử dụng phần mềm, t&ocirc;i hiểu rằng t&ocirc;i đang tạo ra một chữ k&yacute; điện tử m&agrave; n&oacute; c&oacute; gi&aacute; trị v&agrave; hiệu lực tương tự như chữ k&yacute; t&ocirc;i k&yacute; bằng tay.</p>
       <p>&nbsp;</p>
       <p>Cập nhật gần nhất: 16/06/2020.</p>
-      <p>&nbsp;</p>",
-      "sortOrder": 3,
-      "icon": "fal fa-address-card"
+      <p>&nbsp;</p>`,
+      sortOrder: 3,
+      icon: "fal fa-address-card"
     },
     {
-      "key": "chinh-sach-bao-mat",
-      "link": "/chinh-sach-bao-mat",
-      "url": "/chinh-sach-bao-mat",
-      "name": "Chính sách bảo mật",
-      "content": "
+      key: "chinh-sach-bao-mat",
+      link: "/chinh-sach-bao-mat",
+      url: "/chinh-sach-bao-mat",
+      name: "Chính sách bảo mật",
+      content: `
       <p><strong>GIỚI THIỆU</strong></p>
       <ul>
-      <li>Ch&agrave;o mừng bạn đến với&nbsp;phần mềm Đăng K&yacute; Kh&aacute;m Bệnh Trực Tuyến&nbsp;tại Bệnh viện đa khoa khu vực tỉnh An Giang&nbsp;(gọi chung l&agrave;&nbsp;\"Phần mềm\") được vận h&agrave;nh bởi Bệnh viện đa khoa khu vực tỉnh An Giang v&agrave; c&ocirc;ng ty cổ phần ứng dụng PKH (gọi chung l&agrave; \"ch&uacute;ng t&ocirc;i\" hoặc \"của ch&uacute;ng t&ocirc;i\"). Ch&uacute;ng t&ocirc;i nghi&ecirc;m t&uacute;c thực hiện tr&aacute;ch nhiệm của m&igrave;nh li&ecirc;n quan đến bảo mật th&ocirc;ng tin theo c&aacute;c quy định về bảo vệ b&iacute; mật th&ocirc;ng tin c&aacute; nh&acirc;n của ph&aacute;p luật Việt Nam v&agrave; cam kết t&ocirc;n trọng quyền ri&ecirc;ng tư v&agrave; sự quan t&acirc;m của tất cả người d&ugrave;ng đối với Phần mềm (ch&uacute;ng t&ocirc;i gọi c&aacute;c dịch vụ ch&uacute;ng t&ocirc;i cung cấp&nbsp;tr&ecirc;n Phần mềm l&agrave; &ldquo;C&aacute;c Dịch Vụ&rdquo;). Ch&uacute;ng t&ocirc;i nhận biết tầm quan trọng của dữ liệu c&aacute; nh&acirc;n m&agrave; bạn đ&atilde; tin tưởng giao cho ch&uacute;ng t&ocirc;i v&agrave; tin rằng ch&uacute;ng t&ocirc;i c&oacute; tr&aacute;ch nhiệm quản l&yacute;, bảo vệ v&agrave; xử l&yacute; dữ liệu c&aacute; nh&acirc;n của bạn một c&aacute;ch th&iacute;ch hợp. Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y (&ldquo;Ch&iacute;nh S&aacute;ch Bảo Mật&rdquo; hay &ldquo;Ch&iacute;nh S&aacute;ch&rdquo;) được thiết kế để gi&uacute;p bạn hiểu được c&aacute;ch thức ch&uacute;ng t&ocirc;i thu thập, sử dụng, tiết lộ v&agrave;/hoặc xử l&yacute; dữ liệu c&aacute; nh&acirc;n m&agrave; bạn đ&atilde; cung cấp cho ch&uacute;ng t&ocirc;i v&agrave;/hoặc lưu giữ về bạn, cho d&ugrave; l&agrave; hiện nay hoặc trong tương lai, cũng như để gi&uacute;p bạn đưa ra quyết định đ&uacute;ng trước khi cung cấp cho ch&uacute;ng t&ocirc;i bất kỳ dữ liệu c&aacute; nh&acirc;n n&agrave;o của bạn. Vui l&ograve;ng đọc kỹ Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y. Nếu bạn c&oacute; bất kỳ thắc mắc n&agrave;o về th&ocirc;ng tin n&agrave;y hoặc c&aacute;c phương ph&aacute;p bảo mật th&ocirc;ng tin của ch&uacute;ng t&ocirc;i, vui l&ograve;ng li&ecirc;n hệ với ch&uacute;ng t&ocirc;i qua tổng đ&agrave;i&nbsp;19002267&nbsp;hoặc gửi email đến địa chỉ&nbsp;<strong>hotro@medpro.com.vn</strong>.<br /> </li>
+      <li>Ch&agrave;o mừng bạn đến với&nbsp;phần mềm Đăng K&yacute; Kh&aacute;m Bệnh Trực Tuyến&nbsp;tại Bệnh viện Trưng Vương&nbsp;(gọi chung l&agrave;&nbsp;"Phần mềm") được vận h&agrave;nh bởi Bệnh viện Trưng Vương v&agrave; c&ocirc;ng ty cổ phần ứng dụng PKH (gọi chung l&agrave; "ch&uacute;ng t&ocirc;i" hoặc "của ch&uacute;ng t&ocirc;i"). Ch&uacute;ng t&ocirc;i nghi&ecirc;m t&uacute;c thực hiện tr&aacute;ch nhiệm của m&igrave;nh li&ecirc;n quan đến bảo mật th&ocirc;ng tin theo c&aacute;c quy định về bảo vệ b&iacute; mật th&ocirc;ng tin c&aacute; nh&acirc;n của ph&aacute;p luật Việt Nam v&agrave; cam kết t&ocirc;n trọng quyền ri&ecirc;ng tư v&agrave; sự quan t&acirc;m của tất cả người d&ugrave;ng đối với Phần mềm (ch&uacute;ng t&ocirc;i gọi c&aacute;c dịch vụ ch&uacute;ng t&ocirc;i cung cấp&nbsp;tr&ecirc;n Phần mềm l&agrave; &ldquo;C&aacute;c Dịch Vụ&rdquo;). Ch&uacute;ng t&ocirc;i nhận biết tầm quan trọng của dữ liệu c&aacute; nh&acirc;n m&agrave; bạn đ&atilde; tin tưởng giao cho ch&uacute;ng t&ocirc;i v&agrave; tin rằng ch&uacute;ng t&ocirc;i c&oacute; tr&aacute;ch nhiệm quản l&yacute;, bảo vệ v&agrave; xử l&yacute; dữ liệu c&aacute; nh&acirc;n của bạn một c&aacute;ch th&iacute;ch hợp. Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y (&ldquo;Ch&iacute;nh S&aacute;ch Bảo Mật&rdquo; hay &ldquo;Ch&iacute;nh S&aacute;ch&rdquo;) được thiết kế để gi&uacute;p bạn hiểu được c&aacute;ch thức ch&uacute;ng t&ocirc;i thu thập, sử dụng, tiết lộ v&agrave;/hoặc xử l&yacute; dữ liệu c&aacute; nh&acirc;n m&agrave; bạn đ&atilde; cung cấp cho ch&uacute;ng t&ocirc;i v&agrave;/hoặc lưu giữ về bạn, cho d&ugrave; l&agrave; hiện nay hoặc trong tương lai, cũng như để gi&uacute;p bạn đưa ra quyết định đ&uacute;ng trước khi cung cấp cho ch&uacute;ng t&ocirc;i bất kỳ dữ liệu c&aacute; nh&acirc;n n&agrave;o của bạn. Vui l&ograve;ng đọc kỹ Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y. Nếu bạn c&oacute; bất kỳ thắc mắc n&agrave;o về th&ocirc;ng tin n&agrave;y hoặc c&aacute;c phương ph&aacute;p bảo mật th&ocirc;ng tin của ch&uacute;ng t&ocirc;i, vui l&ograve;ng li&ecirc;n hệ với ch&uacute;ng t&ocirc;i qua tổng đ&agrave;i&nbsp;19002267&nbsp;hoặc gửi email đến địa chỉ&nbsp;<strong>hotro@medpro.com.vn</strong>.<br /> </li>
       <li>&ldquo;Dữ liệu c&aacute; nh&acirc;n&rdquo; c&oacute; nghĩa l&agrave; dữ liệu, d&ugrave; đ&uacute;ng hay kh&ocirc;ng về một c&aacute; nh&acirc;n m&agrave; th&ocirc;ng qua đ&oacute; c&oacute; thể được x&aacute;c định được danh t&iacute;nh, hoặc từ dữ liệu đ&oacute; v&agrave; th&ocirc;ng tin kh&aacute;c m&agrave; một tổ chức c&oacute; hoặc c&oacute; khả năng tiếp cận. C&aacute;c v&iacute; dụ thường gặp về dữ liệu c&aacute; nh&acirc;n c&oacute; thể gồm c&oacute; t&ecirc;n, số chứng minh nh&acirc;n d&acirc;n v&agrave; th&ocirc;ng tin li&ecirc;n hệ.<br /> </li>
       <li>Bằng việc sử dụng C&aacute;c Dịch Vụ, đăng k&yacute; một t&agrave;i khoản với ch&uacute;ng t&ocirc;i, truy cập Phần mềm của ch&uacute;ng t&ocirc;i, hoặc tiếp cận C&aacute;c Dịch Vụ, bạn x&aacute;c nhận v&agrave; đồng &yacute; rằng bạn chấp nhận c&aacute;c phương ph&aacute;p, y&ecirc;u cầu, v&agrave;/hoặc ch&iacute;nh s&aacute;ch được m&ocirc; tả trong Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y, v&agrave; theo đ&acirc;y bạn đồng &yacute; cho ph&eacute;p ch&uacute;ng t&ocirc;i thu thập, sử dụng, tiết lộ v&agrave;/hoặc xử l&yacute; dữ liệu c&aacute; nh&acirc;n của bạn như m&ocirc; tả trong đ&acirc;y.</li>
       <li>Nếu bạn kh&ocirc;ng đồng &yacute; cho ph&eacute;p xử l&yacute; dữ liệu c&aacute; nh&acirc;n của bạn như m&ocirc; tả trong ch&iacute;nh s&aacute;ch n&agrave;y, vui l&ograve;ng kh&ocirc;ng sử dụng c&aacute;c dịch vụ của ch&uacute;ng t&ocirc;i hay truy cập phần mềm của ch&uacute;ng t&ocirc;i. Nếu ch&uacute;ng t&ocirc;i thay đổi Ch&iacute;nh S&aacute;ch Bảo Mật của m&igrave;nh, ch&uacute;ng t&ocirc;i sẽ đăng những thay đổi đ&oacute; hoặc Ch&iacute;nh S&aacute;ch Bảo Mật sửa đổi tr&ecirc;n Phần mềm. Ch&uacute;ng t&ocirc;i c&oacute; quyền sửa đổi bổ sung Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y v&agrave;o bất kỳ l&uacute;c n&agrave;o.</li>
@@ -986,26 +1033,26 @@
       </ul>
       <p><strong>ĐIỀU KHOẢN CHUNG</strong></p>
       <ul>
-      <li>Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y l&agrave; một phần kh&ocirc;ng t&aacute;ch rời với&nbsp;<a href=\"https://medpro.com.vn/term\">Điều Khoản Dịch Vụ</a>&nbsp;v&agrave;&nbsp;<a href=\"https://medpro.com.vn/quydinh\">Quy Định Sử Dụng Phần Mềm</a>&nbsp;của ch&uacute;ng t&ocirc;i. Xin vui l&ograve;ng đọc th&ecirc;m c&aacute;c Điều Khoản Dịch Vụ v&agrave; Quy Định Sử Dụng&nbsp;để hiểu r&otilde; c&aacute;c quy định, điều khoản, ch&iacute;nh s&aacute;ch v&agrave; hướng dẫn của ch&uacute;ng t&ocirc;i trước khi bạn truy cập Phần mềm v&agrave;/hoặc đăng k&yacute; v&agrave;/hoặc sử dụng c&aacute;c Dịch Vụ tr&ecirc;n Phần mềm của ch&uacute;ng t&ocirc;i.</li>
+      <li>Ch&iacute;nh S&aacute;ch Bảo Mật n&agrave;y l&agrave; một phần kh&ocirc;ng t&aacute;ch rời với&nbsp;<a href="https://medpro.com.vn/term">Điều Khoản Dịch Vụ</a>&nbsp;v&agrave;&nbsp;<a href="https://medpro.com.vn/quydinh">Quy Định Sử Dụng Phần Mềm</a>&nbsp;của ch&uacute;ng t&ocirc;i. Xin vui l&ograve;ng đọc th&ecirc;m c&aacute;c Điều Khoản Dịch Vụ v&agrave; Quy Định Sử Dụng&nbsp;để hiểu r&otilde; c&aacute;c quy định, điều khoản, ch&iacute;nh s&aacute;ch v&agrave; hướng dẫn của ch&uacute;ng t&ocirc;i trước khi bạn truy cập Phần mềm v&agrave;/hoặc đăng k&yacute; v&agrave;/hoặc sử dụng c&aacute;c Dịch Vụ tr&ecirc;n Phần mềm của ch&uacute;ng t&ocirc;i.</li>
       </ul>
       <p>T&ocirc;i đ&atilde; đọc ch&iacute;ch s&aacute;ch n&agrave;y v&agrave; đồng &yacute; với tất cả c&aacute;c điều khoản c&oacute; trong nội dung b&ecirc;n tr&ecirc;n v&agrave; bất kỳ bản chỉnh sửa n&agrave;o của nội dung b&ecirc;n tr&ecirc;n sau n&agrave;y. bằng việc tiếp tục truy cập v&agrave; sử dụng phần mềm, t&ocirc;i hiểu rằng t&ocirc;i đang tạo ra một chữ k&yacute; điện tử m&agrave; n&oacute; c&oacute; gi&aacute; trị v&agrave; hiệu lực tương tự như chữ k&yacute; t&ocirc;i k&yacute; bằng tay.</p>
       <p>&nbsp;</p>
       <p>Cập nhật gần nhất: 16/06/2020.&nbsp;</p>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>",
-      "sortOrder": 4,
-      "icon": "fal fa-question-circle"
+      <p>&nbsp;</p>`,
+      sortOrder: 4,
+      icon: "fal fa-question-circle"
     },
     {
-      "key": "quy-dinh-su-dung",
-      "link": "/quy-dinh-su-dung",
-      "url": "/quy-dinh-su-dung",
-      "name": "Quy định sử dụng",
-      "content": "
-      <p>Ch&agrave;o mừng bạn đến với&nbsp;phần mềm Đăng K&yacute; Kh&aacute;m Bệnh Trực Tuyến&nbsp;tại Bệnh viện đa khoa khu vực tỉnh An Giang (gọi chung l&agrave;&nbsp;\"Phần mềm\"). Vui l&ograve;ng đọc kỹ c&aacute;c Quy Định Sử Dụng dưới đ&acirc;y trước khi tiếp tục truy cập hoặc sử dụng c&aacute;c dịch vụ của Phần mềm, để bạn biết được c&aacute;c quyền lợi v&agrave; nghĩa vụ hợp ph&aacute;p của m&igrave;nh li&ecirc;n quan đến c&aacute;c vấn đề về việc đăng k&yacute; kh&aacute;m bệnh, thanh to&aacute;n, nhận&nbsp;phiếu kh&aacute;m bệnh, tạo hồ sơ bệnh nh&acirc;n, quản l&yacute; v&agrave; sử dụng th&ocirc;ng tin trong hồ sơ bệnh nh&acirc;n, quản l&yacute; phiếu kh&aacute;m bệnh, ho&agrave;n tiền, hủy phiếu&nbsp;kh&aacute;m bệnh, sửa&nbsp;th&ocirc;ng tin phiếu kh&aacute;m bệnh, c&aacute;ch giải quyết c&aacute;c sự cố.... trong qu&aacute; tr&igrave;nh sử dụng Phần mềm.</p>
+      key: "quy-dinh-su-dung",
+      link: "/quy-dinh-su-dung",
+      url: "/quy-dinh-su-dung",
+      name: "Quy định sử dụng",
+      content: `
+      <p>Ch&agrave;o mừng bạn đến với&nbsp;phần mềm Đăng K&yacute; Kh&aacute;m Bệnh Trực Tuyến&nbsp;tại Bệnh viện Trưng Vương (gọi chung l&agrave;&nbsp;"Phần mềm"). Vui l&ograve;ng đọc kỹ c&aacute;c Quy Định Sử Dụng dưới đ&acirc;y trước khi tiếp tục truy cập hoặc sử dụng c&aacute;c dịch vụ của Phần mềm, để bạn biết được c&aacute;c quyền lợi v&agrave; nghĩa vụ hợp ph&aacute;p của m&igrave;nh li&ecirc;n quan đến c&aacute;c vấn đề về việc đăng k&yacute; kh&aacute;m bệnh, thanh to&aacute;n, nhận&nbsp;phiếu kh&aacute;m bệnh, tạo hồ sơ bệnh nh&acirc;n, quản l&yacute; v&agrave; sử dụng th&ocirc;ng tin trong hồ sơ bệnh nh&acirc;n, quản l&yacute; phiếu kh&aacute;m bệnh, ho&agrave;n tiền, hủy phiếu&nbsp;kh&aacute;m bệnh, sửa&nbsp;th&ocirc;ng tin phiếu kh&aacute;m bệnh, c&aacute;ch giải quyết c&aacute;c sự cố.... trong qu&aacute; tr&igrave;nh sử dụng Phần mềm.</p>
       <p>C&aacute;c định nghĩa:</p>
       <ul>
-      <li>Ch&uacute;ng t&ocirc;i: theo ngữ cảnh c&oacute; thể l&agrave; Bệnh viện đa khoa khu vực tỉnh An Giang, v&agrave;/hoặc c&ocirc;ng ty cổ phần ứng dụng PKH, v&agrave;/hoặc c&aacute;c b&ecirc;n thứ ba kh&aacute;c c&oacute; li&ecirc;n kết tr&ecirc;n Phần mềm.</li>
+      <li>Ch&uacute;ng t&ocirc;i: theo ngữ cảnh c&oacute; thể l&agrave; Bệnh viện Trưng Vương, v&agrave;/hoặc c&ocirc;ng ty cổ phần ứng dụng PKH, v&agrave;/hoặc c&aacute;c b&ecirc;n thứ ba kh&aacute;c c&oacute; li&ecirc;n kết tr&ecirc;n Phần mềm.</li>
       <li>Dịch vụ: l&agrave; một hoặc một phần hoặc tất cả c&aacute;c t&iacute;nh năng v&agrave; tiện &iacute;ch được triển khai tr&ecirc;n Phần mềm.</li>
       <li>Bạn: theo ngữ cảnh c&oacute; thể l&agrave; người d&ugrave;ng, hoặc&nbsp;bệnh nh&acirc;n, hoặc người được bệnh nh&acirc;n đ&atilde; ủy quyền bằng văn bản, lời n&oacute;i hoặc một h&igrave;nh thức kh&aacute;c,&nbsp;để truy cập Phần mềm hoặc&nbsp;đăng k&yacute; sử dụng c&aacute;c Dịch Vụ tr&ecirc;n Phần mềm&nbsp;gi&uacute;p cho bệnh nh&acirc;n.</li>
       </ul>
@@ -1020,8 +1067,8 @@
       <ul>
       <li>Bạn phải cung cấp th&ocirc;ng tin bệnh nh&acirc;n trước khi thực hiện đặt hẹn kh&aacute;m bệnh:</li>
       <ul>
-      <li>Nếu đ&atilde; từng kh&aacute;m tại bệnh viện:&nbsp;Bạn phải chọn \"đ&atilde; từng kh&aacute;m\" &gt;&nbsp;nhập m&atilde; số bệnh nh&acirc;n (hay c&ograve;n gọi l&agrave;&nbsp;số hồ sơ) &gt; bấm X&aacute;c nhận.</li>
-      <li>Nếu Bạn chưa từng kh&aacute;m tại bệnh viện: Bạn phải chọn \"chưa từng kh&aacute;m\" &gt;&nbsp;điền đầy đủ, ch&iacute;nh x&aacute;c c&aacute;c th&ocirc;ng tin &gt; bấm X&aacute;c nhận.</li>
+      <li>Nếu đ&atilde; từng kh&aacute;m tại bệnh viện:&nbsp;Bạn phải chọn "đ&atilde; từng kh&aacute;m" &gt;&nbsp;nhập m&atilde; số bệnh nh&acirc;n (hay c&ograve;n gọi l&agrave;&nbsp;số hồ sơ) &gt; bấm X&aacute;c nhận.</li>
+      <li>Nếu Bạn chưa từng kh&aacute;m tại bệnh viện: Bạn phải chọn "chưa từng kh&aacute;m" &gt;&nbsp;điền đầy đủ, ch&iacute;nh x&aacute;c c&aacute;c th&ocirc;ng tin &gt; bấm X&aacute;c nhận.</li>
       </ul>
       <li>C&aacute;c th&ocirc;ng tin về giấy tờ t&ugrave;y th&acirc;n như chứng minh nh&acirc;n d&acirc;n, passport, thẻ căn cước....: bạn phải nhập để ch&uacute;ng t&ocirc;i x&aacute;c định đ&uacute;ng bệnh nh&acirc;n trước khi v&agrave;o ph&ograve;ng kh&aacute;m. Nếu&nbsp;Bạn kh&ocirc;ng c&oacute; th&ocirc;ng tin về c&aacute;c giấy tờ tr&ecirc;n, vui l&ograve;ng li&ecirc;n hệ với ch&uacute;ng t&ocirc;i qua tổng đ&agrave;i 19002267 để được hỗ&nbsp;trợ.</li>
       <li>Địa chỉ email v&agrave; số điện thoại di động: Bạn n&ecirc;n&nbsp;nhập đầy đủ v&agrave; ch&iacute;nh x&aacute;c để Phần mềm gửi th&ocirc;ng b&aacute;o, hoặc th&ocirc;ng tin phiếu kh&aacute;m bệnh cho bạn qua h&igrave;nh thức&nbsp;email v&agrave; tin nhắn sms.</li>
@@ -1068,7 +1115,7 @@
       <ul>
       <li>Tr&ecirc;n Phần mềm: Bạn&nbsp;c&oacute; thể v&agrave;o mục Th&ocirc;ng Tin T&agrave;i Khoản &gt; Phiếu kh&aacute;m bệnh &gt; v&agrave; t&igrave;m thấy phiếu kh&aacute;m bệnh được gửi đến t&agrave;i khoản của bạn tr&ecirc;n Phần mềm.&nbsp;</li>
       <li>Qua email: Nếu trong hồ sơ bệnh nh&acirc;n bạn c&oacute; cung cấp địa chỉ email,&nbsp;phiếu kh&aacute;m bệnh cũng&nbsp;sẽ được&nbsp;gửi ngay đến địa chỉ email của bạn, bạn c&oacute; thể kiểm tra hộp thư đến hoặc Spam để nhận phiếu kh&aacute;m bệnh.</li>
-      <li>Tin nhắn&nbsp;sms: Bạn cũng c&oacute; thể y&ecirc;u cầu nhận th&ocirc;ng tin phiếu kh&aacute;m bệnh qua tin nhắn sms, bằng c&aacute;ch:&nbsp;chọn \"Gửi tin nhắn sms\" &gt; nhập số điện thoại muốn nhận tin &gt; bấm&nbsp;\"X&aacute;c nhận\". Phần mềm&nbsp;gửi th&ocirc;ng tin phiếu kh&aacute;m bệnh đến số điện thoại bạn vừa nhập&nbsp;qua&nbsp;tin nhắn sms.</li>
+      <li>Tin nhắn&nbsp;sms: Bạn cũng c&oacute; thể y&ecirc;u cầu nhận th&ocirc;ng tin phiếu kh&aacute;m bệnh qua tin nhắn sms, bằng c&aacute;ch:&nbsp;chọn "Gửi tin nhắn sms" &gt; nhập số điện thoại muốn nhận tin &gt; bấm&nbsp;"X&aacute;c nhận". Phần mềm&nbsp;gửi th&ocirc;ng tin phiếu kh&aacute;m bệnh đến số điện thoại bạn vừa nhập&nbsp;qua&nbsp;tin nhắn sms.</li>
       </ul>
       </ul>
       <p>Mỗi phiếu kh&aacute;m bệnh bạn c&oacute; thể&nbsp;y&ecirc;u cầu gửi tin nhắn sms&nbsp;hai&nbsp;lần, v&agrave; ho&agrave;n to&agrave;n miễn ph&iacute;.</p>
@@ -1097,7 +1144,7 @@
       <li><u>Trừ trường hợp</u>: Lịch kh&aacute;m của b&aacute;c sĩ tr&ecirc;n phiếu kh&aacute;m bệnh thay đổi v&agrave;o ng&agrave;y kh&aacute;m đ&atilde; đăng k&yacute;. Khi đ&oacute;, việc&nbsp;chỉnh sửa Th&ocirc;ng Tin Kh&aacute;m được&nbsp;quy định như&nbsp;sau:</li>
       <ul>
       <li>Phải chỉnh sửa trước 16h của ng&agrave;y trước ng&agrave;y kh&aacute;m.&nbsp;</li>
-      <li>C&aacute;ch thức thay đổi: Đăng nhập Phần mềm&nbsp;&gt; Th&ocirc;ng Tin T&agrave;i Khoản &gt; Quản l&yacute; phiếu kh&aacute;m bệnh &gt; chọn v&agrave;o phiếu kh&aacute;m bệnh bị thay đổi lịch kh&aacute;m &gt; bấm \"Chỉnh sửa\".</li>
+      <li>C&aacute;ch thức thay đổi: Đăng nhập Phần mềm&nbsp;&gt; Th&ocirc;ng Tin T&agrave;i Khoản &gt; Quản l&yacute; phiếu kh&aacute;m bệnh &gt; chọn v&agrave;o phiếu kh&aacute;m bệnh bị thay đổi lịch kh&aacute;m &gt; bấm "Chỉnh sửa".</li>
       <li>Chỉ được chỉnh sửa&nbsp;1 lần.</li>
       <li>Kh&ocirc;ng phải trả bất kỳ một khoản tiền hay ph&iacute; n&agrave;o cho việc chỉnh sửa.</li>
       <li>Chỉ chỉnh sửa c&aacute;c th&ocirc;ng tin: ng&agrave;y kh&aacute;m, giờ kh&aacute;m, v&agrave; ph&ograve;ng kh&aacute;m (b&aacute;c sĩ kh&aacute;m).</li>
@@ -1156,11 +1203,12 @@
       </ul>
       <p>T&ocirc;i đ&atilde; đọc quy định sử dụng phần mềm n&agrave;y v&agrave; đồng &yacute; với tất cả c&aacute;c quy định c&oacute; trong nội dung b&ecirc;n tr&ecirc;n v&agrave; bất kỳ bản chỉnh sửa n&agrave;o của nội dung b&ecirc;n tr&ecirc;n sau n&agrave;y. bằng việc tiếp tục truy cập v&agrave; sử dụng phần mềm, t&ocirc;i hiểu rằng t&ocirc;i đang tạo ra một chữ k&yacute; điện tử m&agrave; n&oacute; c&oacute; gi&aacute; trị v&agrave; hiệu lực tương tự như chữ k&yacute; t&ocirc;i k&yacute; bằng tay.</p>
       <p>&nbsp;Cập nhật gần nhất: 16/06/2020.&nbsp;</p>
-      <p>&nbsp;</p>",
-      "sortOrder": 5,
-      "icon": "fal fa-question-circle"
+      <p>&nbsp;</p>`,
+      sortOrder: 5,
+      icon: "fal fa-question-circle"
     }
   ]
 };
 
 
+module.exports = nhidong1;

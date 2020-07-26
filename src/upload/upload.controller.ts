@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp');
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    const dir = `client/st/hospitals/${req.headers.hospital}`;
+    const dir = `client/upload/hospitals/${req.headers.hospital}`;
     mkdirp(dir, err => cb(err, dir))
   },
   filename: function (req, file, cb) {
@@ -38,7 +38,7 @@ export class UploadController {
   @Bind(UploadedFiles())
   @UseInterceptors(FileFieldsInterceptor([
     { name: 'image', maxCount: 1 },
-    // { name: 'background', maxCount: 1 }
+    // { name: 'content', maxCount: 1 }
   ], options))
 
   uploadFile(files) {
