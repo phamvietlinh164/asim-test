@@ -16,16 +16,20 @@ const storage = multer.diskStorage({
       cb(null, `${req.headers.name}.png`)
     } else if (file.fieldname === 'content' && file.mimetype === 'application/json') {
       cb(null, `${req.headers.name}.json`)
+    } else if (file.fieldname === 'logo' && file.mimetype === 'image/svg+xml') {
+      cb(null, `${req.headers.name}.svg`)
     }
+
   }
 })
 
 const fileFilter = (req, file, cb) => {
   // reject the file
   if (file.fieldname === 'image' && file.mimetype === 'image/png') {
-    console.log('abc')
     cb(null, true)
   } else if (file.fieldname === 'content' && file.mimetype === 'application/json') {
+    cb(null, true)
+  } else if (file.fieldname === 'logo' && file.mimetype === 'image/svg+xml') {
     cb(null, true)
   } else {
     cb(null, false)
@@ -46,7 +50,8 @@ export class UploadController {
   @Bind(UploadedFiles())
   @UseInterceptors(FileFieldsInterceptor([
     { name: 'image', maxCount: 1 },
-    { name: 'content', maxCount: 1 }
+    { name: 'content', maxCount: 1 },
+    { name: 'logo', maxCount: 1 },
   ], options))
 
   uploadFile(files) {
