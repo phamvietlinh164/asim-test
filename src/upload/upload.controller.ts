@@ -1,5 +1,7 @@
 import { Controller, Post, UseInterceptors, Bind, UploadedFiles, Req } from '@nestjs/common';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
+import { HttpException, HttpStatus } from '@nestjs/common';
+// const HttpException = require('h')
 // import { multer } from 'multer';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
@@ -31,7 +33,9 @@ const fileFilter = (req, file, cb) => {
   try {
     var decoded = jwt.verify(req.headers.token, jwtSecretKey);
   } catch (err) {
-    return cb(new Error(err))
+    console.log(err)
+    // return cb(new Error(err))
+    return cb(new HttpException ("Unauthenticated!", 401), false)
   }
 
 
@@ -65,6 +69,7 @@ export class UploadController {
   ], options))
 
   uploadFile(files) {
+    console.log(files)
     return 'Upload successfully!';
   }
 
