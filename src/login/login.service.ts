@@ -10,11 +10,10 @@ export class LoginService {
     if (username === "abc" && password === "abc") {
       const token = jwt.sign({
         data: { username, password }
-      }, jwtSecretKey, { expiresIn: '1h' });
+      }, jwtSecretKey, { expiresIn: '100h' });
       return token
     } else {
       return null
     }
-
   }
 }
