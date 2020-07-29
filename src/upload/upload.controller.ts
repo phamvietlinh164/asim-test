@@ -3,6 +3,8 @@ import { FileFieldsInterceptor } from '@nestjs/platform-express';
 // import { multer } from 'multer';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
+const jwt = require('jsonwebtoken');
+const { jwtSecretKey } = require('../login/login.service')
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -25,6 +27,14 @@ const storage = multer.diskStorage({
 
 const fileFilter = (req, file, cb) => {
   // reject the file
+
+  try {
+    var decoded = jwt.verify(req.headers.token, jwtSecretKey);
+  } catch (err) {
+    return cb(new Error(err))
+  }
+
+
   if (file.fieldname === 'image' && file.mimetype === 'image/png') {
     cb(null, true)
   } else if (file.fieldname === 'content' && file.mimetype === 'application/json') {
@@ -32,7 +42,7 @@ const fileFilter = (req, file, cb) => {
   } else if (file.fieldname === 'logo' && file.mimetype === 'image/svg+xml') {
     cb(null, true)
   } else {
-    cb(null, false)
+    cb(new Error("Can not up load!"))
   }
 }
 

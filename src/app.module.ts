@@ -7,6 +7,8 @@ import { ConfigModule } from './config/config.module';
 import { UploadModule } from './upload/upload.module';
 import { ContentModule } from './content/content.module';
 import { join } from 'path';
+import { LoginModule } from './login/login.module';
+import { CheckAuthModule } from './checkAuth/checkAuth.module';
 
 @Module({
   imports: [
@@ -20,7 +22,9 @@ import { join } from 'path';
       },
     }),
     UploadModule,
-    ContentModule
+    ContentModule,
+    LoginModule,
+    CheckAuthModule,
 
   ],
   controllers: [AppController],
