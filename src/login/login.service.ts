@@ -1,16 +1,13 @@
 import { Injectable } from '@nestjs/common';
 const jwt = require('jsonwebtoken');
+const {jwtConfig} = require('./jwt-config')
 
-
-export const jwtSecretKey = "jafddwd";
 
 @Injectable()
 export class LoginService {
   getToken(username: string, password: string) {
-    if (username === "abc" && password === "abc") {
-      const token = jwt.sign({
-        data: { username, password }
-      }, jwtSecretKey, { expiresIn: '100h' });
+    if (username === jwtConfig.username && password === jwtConfig.password) {
+      const token = jwt.sign({ username, password }, jwtConfig.jwtSecretKey, { expiresIn: jwtConfig.expiredIn });
       return token
     } else {
       return null
