@@ -6,7 +6,7 @@ import { HttpException, HttpStatus } from '@nestjs/common';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
 const jwt = require('jsonwebtoken');
-const { jwtSecretKey } = require('../login/login.service')
+const { jwtConfig } = require('../login/jwt-config')
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -31,11 +31,14 @@ const fileFilter = (req, file, cb) => {
   // reject the file
 
   try {
-    var decoded = jwt.verify(req.headers.token, jwtSecretKey);
+    const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
+    if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
+      throw new Error('Wrong username or password!')
+    }
+
   } catch (err) {
-    console.log(err)
-    // return cb(new Error(err))
-    return cb(new HttpException ("Unauthenticated!", 401), false)
+    // console.log(err)
+    return cb(new HttpException('Unauthenticated!', 401), false)
   }
 
 
@@ -46,7 +49,7 @@ const fileFilter = (req, file, cb) => {
   } else if (file.fieldname === 'logo' && file.mimetype === 'image/svg+xml') {
     cb(null, true)
   } else {
-    cb(new Error("Can not up load!"))
+    cb(new Error('Can not up load!'))
   }
 }
 
@@ -69,7 +72,7 @@ export class UploadController {
   ], options))
 
   uploadFile(files) {
-    console.log(files)
+    // console.log(files)
     return 'Upload successfully!';
   }
 
