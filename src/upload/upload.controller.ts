@@ -1,12 +1,14 @@
 import { Controller, Post, UseInterceptors, Bind, UploadedFiles, Req } from '@nestjs/common';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { HttpException, HttpStatus } from '@nestjs/common';
+
 // const HttpException = require('h')
 // import { multer } from 'multer';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
 const jwt = require('jsonwebtoken');
-const { jwtConfig } = require('../login/jwt-config')
+// const sizeOf = require('image-size');
+const { jwtConfig } = require('../login/jwt-config');
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -29,17 +31,17 @@ const storage = multer.diskStorage({
 
 const fileFilter = (req, file, cb) => {
   // reject the file
-
+  // console.log(req)
   try {
     const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
     if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
       throw new Error('Wrong username or password!')
     }
-
   } catch (err) {
-    // console.log(err)
     return cb(new HttpException('Unauthenticated!', 401), false)
   }
+
+  // const dimensions = sizeOf('images/funny-cats.png');
 
 
   if (file.fieldname === 'image' && file.mimetype === 'image/png') {
