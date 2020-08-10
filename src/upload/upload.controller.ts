@@ -7,16 +7,18 @@ import { HttpException, HttpStatus } from '@nestjs/common';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
 const jwt = require('jsonwebtoken');
-// const sizeOf = require('image-size');
+const sizeOf = require('image-size');
 const { jwtConfig } = require('../login/jwt-config');
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
+    // console.log(file)
     const dir = `client/upload/hospitals/${req.headers.hospital}`;
     mkdirp(dir, err => cb(err, dir))
   },
   filename: function (req, file, cb) {
     // const type = file.originalname.split(".")[1];
+    // console.log(file)
 
     if (file.fieldname === 'image' && file.mimetype === 'image/png') {
       cb(null, `${req.headers.name}.png`)
@@ -41,10 +43,14 @@ const fileFilter = (req, file, cb) => {
     return cb(new HttpException('Unauthenticated!', 401), false)
   }
 
-  // const dimensions = sizeOf('images/funny-cats.png');
+
 
 
   if (file.fieldname === 'image' && file.mimetype === 'image/png') {
+    // const dimensions = sizeOf(`client/upload/hospitals/${req.headers.hospital}/${req.headers.name}.png`);
+    // console.log(dimensions)
+    // if(dimensions.width < 100){cb(null, true)}else {cb(new HttpException('Too big', 400), false)}
+
     cb(null, true)
   } else if (file.fieldname === 'content' && file.mimetype === 'application/json') {
     cb(null, true)
