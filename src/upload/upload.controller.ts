@@ -7,7 +7,7 @@ import { HttpException, HttpStatus } from '@nestjs/common';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
 const jwt = require('jsonwebtoken');
-const sizeOf = require('image-size');
+// const sizeOf = require('image-size');
 const { jwtConfig } = require('../login/jwt-config');
 
 const storage = multer.diskStorage({

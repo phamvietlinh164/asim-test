@@ -5,7 +5,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 
 import { ConfigModule } from './config/config.module';
 import { UploadModule } from './upload/upload.module';
-import { ContentModule } from './content/content.module';
+import { ManageContentModule } from './manageContent/manageContent.module';
 import { join } from 'path';
 import { LoginModule } from './login/login.module';
 import { CheckAuthModule } from './checkAuth/checkAuth.module';
@@ -22,7 +22,7 @@ import { CheckAuthModule } from './checkAuth/checkAuth.module';
       },
     }),
     UploadModule,
-    ContentModule,
+    ManageContentModule,
     LoginModule,
     CheckAuthModule,
 
