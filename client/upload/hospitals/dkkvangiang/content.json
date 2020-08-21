@@ -3,17 +3,17 @@
     {
       "key": "logo-header",
       "displayPrefix": "",
-      "value": "/static/upload/hospitals/dkkvangiang/header_logo.png"
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/dkkvangiang/header_logo.svg"
     },
     {
       "key": "logo-footer",
       "displayPrefix": "",
-      "value": "/static/upload/hospitals/dkkvangiang/footer_logo.png"
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/dkkvangiang/footer_logo.svg"
     },
     {
       "key": "logo-header-white",
       "displayPrefix": "",
-      "value": "/static/upload/hospitals/dkkvangiang/logo_header_white.png"
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/dkkvangiang/logo_header_white.svg"
     },
     {
       "key": "name",
@@ -147,7 +147,7 @@
       "list": [
         {
           "key": 1,
-          "url": "/static/upload/hospitals/dkkvangiang/banner_desktop.png",
+          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/dkkvangiang/banner_desktop.png",
           "style": "center bottom no-repeat"
         }
       ]
@@ -157,7 +157,7 @@
       "list": [
         {
           "key": 2,
-          "url": "/static/upload/hospitals/dkkvangiang/banner_mobile.png",
+          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/dkkvangiang/banner_mobile.png",
           "style": "center bottom no-repeat"
         }
       ]
@@ -167,7 +167,7 @@
       "list": [
         {
           "key": 1,
-          "url": "/static/upload/hospitals/dkkvangiang/slide.png",
+          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/dkkvangiang/slide.png",
           "style": ""
         }
       ]
@@ -225,7 +225,8 @@
             <p><strong>Lưu ý tổng số tiền thanh toán sẽ bao gồm:</strong></p>
             <ul>
               <li>Tiền khám: dịch vụ theo quy định của bệnh viện.</li>
-              <li>Phí tiện ích: 10,000 đồng.</li>
+              <li>Phí tiện ích: 10,
+      000 đồng.</li>
               <li>Sau khi thanh toán thành công Phiếu khám điện tử sẽ được gửi qua email, tin nhắn sms và trên phần mềm.</li>
             </ul>
           </div>
