@@ -41,7 +41,7 @@ const fileFilter = (req, file, cb) => {
     return cb(new HttpException('Unauthenticated!', 401), false)
   }
 
-  if (file.fieldname === 'customUpload' && (file.mimetype === "image/png" || file.mimetype === "image/svg+xml" || file.mimetype === "application/json")) {
+  if (file.fieldname === 'customUpload' && (file.mimetype === "image/png" || file.mimetype === "image/svg+xml" || file.mimetype === "image/jpeg" || file.mimetype === "application/json")) {
     cb(null, true)
   } else {
     cb(new Error('Can not up load!'))
