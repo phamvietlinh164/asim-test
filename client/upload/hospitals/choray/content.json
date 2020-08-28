@@ -3,17 +3,17 @@
     {
       "key": "logo-header",
       "displayPrefix": "",
-      "value": "/static/upload/hospitals/choray/header_logo.png"
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/header_logo.svg"
     },
     {
       "key": "logo-footer",
       "displayPrefix": "",
-      "value": "/static/upload/hospitals/choray/footer_logo.png"
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/footer_logo.svg"
     },
     {
       "key": "logo-header-white",
       "displayPrefix": "",
-      "value": "/static/upload/hospitals/choray/logo_header_white.png"
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/logo_header_white.svg"
     },
     {
       "key": "name",
@@ -136,6 +136,11 @@
       "value": "7:30 - 16:30"
     },
     {
+      "key": "fee-code-image",
+      "displayPrefix": "Mã số thanh toán",
+      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/payment_bill.png"
+    },
+    {
       "key": "bien-lai",
       "displayPrefix": "",
       "value": ""
@@ -147,7 +152,7 @@
       "list": [
         {
           "key": 1,
-          "url": "/static/upload/hospitals/choray/banner_desktop.png",
+          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/banner_desktop.png",
           "style": "center bottom no-repeat"
         }
       ]
@@ -157,7 +162,7 @@
       "list": [
         {
           "key": 2,
-          "url": "/static/upload/hospitals/choray/banner_mobile.png",
+          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/banner_mobile.png",
           "style": "center bottom no-repeat"
         }
       ]
@@ -167,7 +172,7 @@
       "list": [
         {
           "key": 1,
-          "url": "/static/upload/hospitals/choray/slide.png",
+          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/slide.png",
           "style": ""
         }
       ]
@@ -1165,6 +1170,80 @@
       <p>Tôi đã đọc quy định sử dụng phần mềm này và đồng ý với tất cả các quy định có trong nội dung bên trên và bất kỳ bản chỉnh sửa nào của nội dung bên trên sau này. bằng việc tiếp tục truy cập và sử dụng phần mềm, tôi hiểu rằng tôi đang tạo ra một chữ ký điện tử mà nó có giá trị và hiệu lực tương tự như chữ ký tôi ký bằng tay.</p>",
     "sortOrder": 5,
       "icon": "fal fa-question-circle"
+    }
+  ],
+  "imageManage": [
+    {
+      "label": "header_logo.svg",
+      "name": "header_logo",
+      "type": "image/svg+xml",
+      "typeUrl": "svg",
+      "require": false,
+      "fieldName": "logo",
+      "action": "upload"
+    },
+    {
+      "label": "banner_desktop.png",
+      "name": "banner_desktop",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "banner_mobile.png",
+      "name": "banner_mobile",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "slide.png",
+      "name": "slide",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "logo_header_white.svg",
+      "name": "logo_header_white",
+      "type": "image/svg+xml",
+      "typeUrl": "svg",
+      "require": false,
+      "fieldName": "logo",
+      "action": "upload"
+    },
+    {
+      "label": "footer_logo.svg",
+      "name": "footer_logo",
+      "type": "image/svg+xml",
+      "typeUrl": "svg",
+      "require": false,
+      "fieldName": "logo",
+      "action": "upload"
+    },
+    {
+      "label": "payment_bill.png",
+      "name": "payment_bill",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "bien_lai.png",
+      "name": "bien_lai",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
     }
   ]
 }

@@ -4,11 +4,13 @@ import { AppService } from './app.service';
 import { ServeStaticModule } from '@nestjs/serve-static';
 
 import { ConfigModule } from './config/config.module';
-import { UploadModule } from './upload/upload.module';
-import { ManageContentModule } from './manageContent/manageContent.module';
+import { UploadModule } from './api/upload/upload.module';
 import { join } from 'path';
-import { LoginModule } from './login/login.module';
-import { CheckAuthModule } from './checkAuth/checkAuth.module';
+import { LoginModule } from './api/login/login.module';
+import { CheckAuthModule } from './api/checkAuth/checkAuth.module';
+import { CustomUploadModule } from './api/customUpload/customUpload.module';
+import { GetListFileModule } from './api/getListFile/getListFile.module';
+import { ContentModule } from './api/content/content.module';
 
 @Module({
   imports: [
@@ -22,9 +24,11 @@ import { CheckAuthModule } from './checkAuth/checkAuth.module';
       },
     }),
     UploadModule,
-    ManageContentModule,
+    CustomUploadModule,
     LoginModule,
     CheckAuthModule,
+    GetListFileModule,
+    ContentModule,
 
   ],
   controllers: [AppController],
