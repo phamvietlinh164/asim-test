@@ -225,7 +225,8 @@
             <p><strong>Lưu ý tổng số tiền thanh toán sẽ bao gồm:</strong></p>
             <ul>
               <li>Tiền khám: dịch vụ theo quy định của bệnh viện.</li>
-              <li>Phí tiện ích: 10,000 đồng.</li>
+              <li>Phí tiện ích: 10,
+      000 đồng.</li>
               <li>Sau khi thanh toán thành công Phiếu khám điện tử sẽ được gửi qua email, tin nhắn sms và trên phần mềm.</li>
             </ul>
           </div>
@@ -1164,6 +1165,80 @@
       <p>Tôi đã đọc quy định sử dụng phần mềm này và đồng ý với tất cả các quy định có trong nội dung bên trên và bất kỳ bản chỉnh sửa nào của nội dung bên trên sau này. bằng việc tiếp tục truy cập và sử dụng phần mềm, tôi hiểu rằng tôi đang tạo ra một chữ ký điện tử mà nó có giá trị và hiệu lực tương tự như chữ ký tôi ký bằng tay.</p>",
     "sortOrder": 5,
       "icon": "fal fa-question-circle"
+    }
+  ],
+  "imageManage": [
+    {
+      "label": "header_logo.svg",
+      "name": "header_logo",
+      "type": "image/svg+xml",
+      "typeUrl": "svg",
+      "require": false,
+      "fieldName": "logo",
+      "action": "upload"
+    },
+    {
+      "label": "banner_desktop.png",
+      "name": "banner_desktop",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "banner_mobile.png",
+      "name": "banner_mobile",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "slide.png",
+      "name": "slide",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "logo_header_white.svg",
+      "name": "logo_header_white",
+      "type": "image/svg+xml",
+      "typeUrl": "svg",
+      "require": false,
+      "fieldName": "logo",
+      "action": "upload"
+    },
+    {
+      "label": "footer_logo.svg",
+      "name": "footer_logo",
+      "type": "image/svg+xml",
+      "typeUrl": "svg",
+      "require": false,
+      "fieldName": "logo",
+      "action": "upload"
+    },
+    {
+      "label": "payment_bill.png",
+      "name": "payment_bill",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
+    },
+    {
+      "label": "bien_lai.png",
+      "name": "bien_lai",
+      "type": "image/png",
+      "typeUrl": "png",
+      "require": false,
+      "fieldName": "image",
+      "action": "upload"
     }
   ]
 }

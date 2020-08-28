@@ -1,0 +1,84 @@
+{
+  "info": [
+    {
+      "key": "logo-header",
+      "displayPrefix": "",
+      "value": "/static/upload/hospitals/choray/header_logo.png"
+    },
+    {
+      "key": "logo-footer",
+      "displayPrefix": "",
+      "value": "/static/upload/hospitals/choray/footer_logo.png"
+    },
+    {
+      "key": "logo-header-white",
+      "displayPrefix": "",
+      "value": "/static/upload/hospitals/choray/logo_header_white.png"
+    },
+    {
+      "key": "name",
+      "displayPrefix": "",
+      "value": "Bệnh viện Chợ Rẫy"
+    },
+    {
+      "key": "address",
+      "displayPrefix": "Địa chỉ:",
+      "value": "201B Nguyễn Chí Thanh, Phường 12, Quận 5, Thành phố Hồ Chí Minh"
+    },
+    {
+      "key": "website",
+      "displayPrefix": "Website:",
+      "value": "http://choray.vn"
+    },
+    {
+      "key": "email",
+      "displayPrefix": "Email:",
+      "value": "bvchoray@choray.vn"
+    },
+    {
+      "key": "phone",
+      "displayPrefix": "Điện thoại:",
+      "value": "(84-028) 3855 4137"
+    },
+    {
+      "key": "ios",
+      "displayPrefix": "",
+      "value": "/"
+    },
+    {
+      "key": "android",
+      "displayPrefix": "",
+      "value": "/"
+    },
+    {
+      "key": "hotline-partner",
+      "displayPrefix": "Giải đáp về chuyên môn",
+      "value": "(84-028) 3855 4137"
+    },
+    {
+      "key": "hotline-medpro",
+      "displayPrefix": "Hỗ trợ kỹ thuật",
+      "value": "1900.2267"
+    },
+    {
+      "key": "google-map",
+      "displayPrefix": "",
+      "value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.707076818123!2d106.65754181428684!3d10.757043762493844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef1efebf7d7%3A0x9014ce53b8910a58!2sCho%20Ray%20Hospital!5e0!3m2!1sen!2s!4v1594603824129!5m2!1sen!2s"
+    },
+    {
+      "key": "working-date",
+      "displayPrefix": "Thời gian làm việc",
+      "value": "từ thứ 2 đến thứ 7"
+    },
+    {
+      "key": "working-time",
+      "displayPrefix": "Thời gian làm việc",
+      "value": "7:30 - 16:30"
+    },
+    {
+      "key": "bien-lai",
+      "displayPrefix": "",
+      "value": ""
+    }
+  ]
+}
