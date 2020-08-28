@@ -37,6 +37,7 @@ export class ContentController {
     //       console.log(data);
     //   });
     // console.log(url[env].staticUrl)
+    // console.log('abc')
 
 
 
