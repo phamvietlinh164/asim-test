@@ -36,7 +36,7 @@ export class ContentController {
     //     else
     //       console.log(data);
     //   });
-    // console.log(request.headers.origin)
+    // console.log(url[env].staticUrl)
 
 
 
@@ -45,7 +45,7 @@ export class ContentController {
         // 'client/upload/hospitals/choray/example.json',
         `client/upload/hospitals/${partnerId}/content.json`,
         { encoding: 'utf8', flag: 'r' });
-      const str = data.replace(/\/static\/upload\/hospitals/g, `${request.headers.origin}/static/upload/hospitals`)
+      const str = data.replace(/\/static\/upload\/hospitals/g, `${url[env].staticUrl}/static/upload/hospitals`)
       // console.log(str)
 
       return jsonFormat(str);
