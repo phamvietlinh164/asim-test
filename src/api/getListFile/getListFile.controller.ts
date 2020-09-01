@@ -1,5 +1,6 @@
 import { Controller, Get, Param, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
-import { UrlConfigService } from "../../config/config.url.service"
+import { rejects } from 'assert';
+// import { UrlConfigService } from "../../config/config.url.service"
 // import { GetListFileService } from "./getListFile.service";
 // import { rejects } from 'assert';
 // import { FileFieldsInterceptor } from '@nestjs/platform-express';
@@ -7,9 +8,9 @@ import { UrlConfigService } from "../../config/config.url.service"
 
 
 const fs = require('fs');
-const path = require('path');
+// const path = require('path');
 // const finder = require('findit');
-// console.log(process.env.NODE_ENV)
+// console.log(process.env)
 
 
 @Controller('getListFile')
@@ -21,6 +22,7 @@ export class GetListFileController {
     try {
 
       const str = subfol.replace(/-/g, "/");
+      // console.log(str)
       const file = fs.readdirSync(`./${str}`)
       if (!Array.isArray(file)) return []
 
@@ -44,12 +46,19 @@ export class GetListFileController {
       };
 
       var actions = list.map(checkStat)
-      var results = Promise.all(actions);
+
       // console.log(actions)
 
       // results.then(data => )
 
-      return results
+      return new Promise((resolve, rejects) => {
+        Promise.all(actions).then(value => {
+          const result = value.filter(ele => ele);
+          resolve(result)
+        }).catch(err => {
+          rejects()
+        })
+      })
       // const result = list.filter(item => )
 
     } catch (err) {
