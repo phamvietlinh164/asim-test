@@ -15,7 +15,7 @@ export class DownloadController {
 
   download(@Res() res, @Param('filePath') filePath: string) {
 
-    console.log(filePath)
+    // console.log(filePath)
 
     const path = filePath.replace(/-/g, "/");
 
