@@ -11,6 +11,9 @@ import { CheckAuthModule } from './api/checkAuth/checkAuth.module';
 import { CustomUploadModule } from './api/customUpload/customUpload.module';
 import { GetListFileModule } from './api/getListFile/getListFile.module';
 import { ContentModule } from './api/content/content.module';
+import { GetSubFolModule } from './api/getSubFol/getSubFol.module';
+import { DownloadModule } from './api/download/download.module';
+import { ListFileInJsonModule } from './api/listFileInJson/listFileInJson.module';
 
 @Module({
   imports: [
@@ -29,6 +32,10 @@ import { ContentModule } from './api/content/content.module';
     CheckAuthModule,
     GetListFileModule,
     ContentModule,
+    GetSubFolModule,
+    DownloadModule,
+    ListFileInJsonModule,
+
 
   ],
   controllers: [AppController],

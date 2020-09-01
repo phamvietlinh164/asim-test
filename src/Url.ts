@@ -2,6 +2,9 @@
 
 export const url = {
   development: {
+    staticUrl: "http://localhost:6700"
+  },
+  test: {
     staticUrl: "https://static-inside-testing.medpro.com.vn"
   },
   production: {

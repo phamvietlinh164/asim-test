@@ -3,17 +3,17 @@
     {
       "key": "logo-header",
       "displayPrefix": "",
-      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/header_logo.svg"
+      "value": "/static/upload/hospitals/choray/header_logo.svg"
     },
     {
       "key": "logo-footer",
       "displayPrefix": "",
-      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/footer_logo.svg"
+      "value": "/static/upload/hospitals/choray/footer_logo.svg"
     },
     {
       "key": "logo-header-white",
       "displayPrefix": "",
-      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/logo_header_white.svg"
+      "value": "/static/upload/hospitals/choray/logo_header_white.svg"
     },
     {
       "key": "name",
@@ -138,7 +138,7 @@
     {
       "key": "fee-code-image",
       "displayPrefix": "Mã số thanh toán",
-      "value": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/payment_bill.png"
+      "value": "/static/upload/hospitals/choray/payment_bill.png"
     },
     {
       "key": "bien-lai",
@@ -152,7 +152,7 @@
       "list": [
         {
           "key": 1,
-          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/banner_desktop.png",
+          "url": "/static/upload/hospitals/choray/banner_desktop.png",
           "style": "center bottom no-repeat"
         }
       ]
@@ -162,7 +162,7 @@
       "list": [
         {
           "key": 2,
-          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/banner_mobile.png",
+          "url": "/static/upload/hospitals/choray/banner_mobile.png",
           "style": "center bottom no-repeat"
         }
       ]
@@ -172,7 +172,7 @@
       "list": [
         {
           "key": 1,
-          "url": "https://static-inside-testing.medpro.com.vn/static/upload/hospitals/choray/slide.png",
+          "url": "/static/upload/hospitals/choray/slide.png",
           "style": ""
         }
       ]
