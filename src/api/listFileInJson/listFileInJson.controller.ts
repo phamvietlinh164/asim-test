@@ -5,7 +5,7 @@ import { url } from "../../Url"
 
 
 const env = process.env.NODE_ENV || "development";
-// console.log(`${url[env].staticUrl}/getListFile/client-upload-AppIcon-icons`)
+console.log(`${url[env].staticUrl}/getListFile/client-upload-AppIcon-icons`)
 
 
 
@@ -60,15 +60,10 @@ export class ListFileInJsonController {
           resolve(result)
         })
         .catch(function (error) {
-          reject()
+          resolve('abc')
         })
 
-      // try {
 
-
-
-      // } catch (err) {
-      // }
     })
     return getListFile
   }
