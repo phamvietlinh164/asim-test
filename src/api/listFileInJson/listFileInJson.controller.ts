@@ -60,7 +60,7 @@ export class ListFileInJsonController {
           resolve(result)
         })
         .catch(function (error) {
-          resolve('abc')
+          resolve(`${url[env].staticUrl}/getListFile/client-upload-AppIcon-icons`)
         })
 
 
