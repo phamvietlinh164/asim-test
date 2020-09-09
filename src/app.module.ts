@@ -15,6 +15,7 @@ import { GetSubFolModule } from './api/getSubFol/getSubFol.module';
 import { DownloadModule } from './api/download/download.module';
 import { ListFileInJsonModule } from './api/listFileInJson/listFileInJson.module';
 
+console.log(process.env.NODE_ENV)
 @Module({
   imports: [
     ConfigModule,
