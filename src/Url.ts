@@ -9,7 +9,8 @@ export const url = {
     staticUrl: "https://static-inside-testing.medpro.com.vn"
   },
   production: {
-    staticUrl: "https://inside-static.medpro.com.vn"
+    // staticUrl: "https://inside-static.medpro.com.vn"
+    staticUrl: "https://static-inside-testing.medpro.com.vn"
   }
 }
 
