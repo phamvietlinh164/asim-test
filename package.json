@@ -9,7 +9,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "build": "cross-env NODE_ENV=development nest build --watch --webpack",
     "build:no-watch-check-nestjs-command": "cross-env NODE_ENV=development nest build",
-    "build:test": "cross-env NODE_ENV=test nest build",
+    "build:testing": "cross-env NODE_ENV=testing nest build",
     "build:prod": "cross-env NODE_ENV=production nest build",
     "start": "cross-env NODE_ENV=development node dist/main",
     "start:dev": "cross-env NODE_ENV=development nest start --watch",

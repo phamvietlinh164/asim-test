@@ -6,8 +6,8 @@ COPY . .
 
 RUN npm install
 
-RUN npm run build:testing
+RUN npm run build:prod
 
 EXPOSE 6700
-CMD [ "npm", "run", "start:prod" ]
+CMD [ "npm", "run", "start:testing" ]
 
