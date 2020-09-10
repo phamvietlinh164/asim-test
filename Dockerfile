@@ -10,4 +10,3 @@ RUN npm run build:testing
 
 EXPOSE 6700
 CMD [ "npm", "run", "start:testing" ]
-
