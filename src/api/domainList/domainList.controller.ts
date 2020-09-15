@@ -25,7 +25,10 @@ export class DomainListController {
     const domainListByPartnerId = await this.domainListService.findById(partnerId)
     if (domainListByPartnerId.length > 0) {
       const newDomain = { partnerId, domainList }
-      return []
+      // console.log(newDomain.domainList)
+      // const newDomainList = [...domainListByPartnerId.domainList];
+      console.log(domainListByPartnerId[0].domainList)
+      // return await this.domainListService.findOneAndUpdate({ partnerId }, { newDomainList })
     } else {
       return await this.domainListService.create({ partnerId, domainList })
     }
