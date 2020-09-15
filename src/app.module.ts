@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ServeStaticModule } from '@nestjs/serve-static';
+import { MongooseModule } from '@nestjs/mongoose';
 
 import { ConfigModule } from './config/config.module';
 import { UploadModule } from './api/upload/upload.module';
@@ -14,8 +15,9 @@ import { ContentModule } from './api/content/content.module';
 import { GetSubFolModule } from './api/getSubFol/getSubFol.module';
 import { DownloadModule } from './api/download/download.module';
 import { ListFileInJsonModule } from './api/listFileInJson/listFileInJson.module';
+import { DomainListModule } from './api/domainList/domainList.module';
+import { Url } from './Url';
 
-// console.log(process.env.NODE_ENV)
 @Module({
   imports: [
     ConfigModule,
@@ -27,6 +29,8 @@ import { ListFileInJsonModule } from './api/listFileInJson/listFileInJson.module
         index: false,
       },
     }),
+    MongooseModule.forRoot(Url[process.env.NODE_ENV].mongoUrl),
+
     UploadModule,
     CustomUploadModule,
     LoginModule,
@@ -36,6 +40,7 @@ import { ListFileInJsonModule } from './api/listFileInJson/listFileInJson.module
     GetSubFolModule,
     DownloadModule,
     ListFileInJsonModule,
+    DomainListModule
 
 
   ],

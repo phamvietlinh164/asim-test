@@ -1,8 +1,8 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { url } from "../../Url";
-import e = require('express');
-import { resolve } from 'dns';
-import { rejects } from 'assert';
+import { Url } from "../../Url";
+// import e = require('express');
+// import { resolve } from 'dns';
+// import { rejects } from 'assert';
 const glob = require('glob');
 const fs = require('fs');
 
@@ -94,9 +94,6 @@ export class ListFileInJsonController {
         });
       }
 
-
-      // const actionsListFile = listFile.map(checkStatIsFile)
-
       const checkStatIsDirectory = (item) => { // sample async action
         return new Promise((resolve) => {
           fs.stat(`./${item}`, (err, stats) => {
@@ -125,7 +122,6 @@ export class ListFileInJsonController {
               const result = val.filter(value => value);
               fs.stat(str, (err, stats) => {
                 if (err) {
-                  // console.log(err);
                   resolve([])
                   return
                 }
@@ -143,7 +139,6 @@ export class ListFileInJsonController {
 
       const result = new Promise((resolve, rejects) => {
         getListSubFol.then(val3 => {
-          // console.log(Array.isArray(val3))
           var arr = []
           if (Array.isArray(val3)) {
             val3.forEach(element => {
@@ -152,12 +147,10 @@ export class ListFileInJsonController {
 
               // Remove the hidden file like .DS_Store
               var listFile = file.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item))
-              // console.log(listFile);
               listFile.forEach(element2 => {
                 arr.push(`${element}/${element2}`)
               })
             });
-            // console.log(arr);
 
             var actions2 = arr.map(checkStatIsFile);
 
@@ -165,43 +158,26 @@ export class ListFileInJsonController {
               const result = value.filter(ele => ele);
               const arrResult = result.map(ele => {
                 if (typeof (ele) === 'string') {
-                  // console.log(ele.split("/")[])
                   const key = ele.split('/').slice(-1)[0].split('.')[0];
                   return { [key]: ele }
                 }
 
                 return {}
               })
-              resolve(arrResult)
-              // console.log(arrResult)
-              // result.forEach(ele => {
-              //   if (typeof (ele) === "string") {
-              //     const key = ele.split('/')[-1];
-              //   }
-
-              //   arrResult.push({ [key]: ele })
-              // })
-              // console.log(arrResult)
-              // resolve(result)
+              const objResult = {};
+              arrResult.forEach(element => {
+                objResult[Object.keys(element)[0]] = `${Url[env].staticUrl}/${Object.values(element)[0]}`
+              })
+              resolve(objResult)
             }).catch(err => {
               rejects()
             })
           }
         })
       })
-
-
-
       return result
     } catch (err) {
       return []
     }
-
-
-
   }
-
-
-
-
 }

@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Req, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
 import { jsonFormat } from '../../utils/func'
-import { url } from "../../Url"
+import { Url } from "../../Url"
 // import { FileFieldsInterceptor } from '@nestjs/platform-express';
 // import { HttpException } from '@nestjs/common';
 // import { reach } from 'joi';
@@ -46,7 +46,7 @@ export class ContentController {
         // 'client/upload/hospitals/choray/example.json',
         `client/upload/hospitals/${partnerId}/content.json`,
         { encoding: 'utf8', flag: 'r' });
-      const str = data.replace(/\/static\/upload\/hospitals/g, `${url[env].staticUrl}/static/upload/hospitals`)
+      const str = data.replace(/\/static\/upload\/hospitals/g, `${Url[env].staticUrl}/static/upload/hospitals`)
       // console.log(str)
 
       return jsonFormat(str);

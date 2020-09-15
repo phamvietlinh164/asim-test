@@ -34,14 +34,15 @@ const storage = multer.diskStorage({
 const fileFilter = (req, file, cb) => {
   // reject the file
   // console.log(req)
-  try {
-    const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
-    if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
-      throw new Error('Wrong username or password!')
-    }
-  } catch (err) {
-    return cb(new HttpException('Unauthenticated!', 401), false)
-  }
+
+  // try {
+  //   const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
+  //   if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
+  //     return cb(new HttpException('Unauthenticated!', 401), false)
+  //   }
+  // } catch (err) {
+  //   return cb(new HttpException('Unauthenticated!', 401), false)
+  // }
 
 
 

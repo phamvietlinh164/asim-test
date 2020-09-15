@@ -1,15 +1,15 @@
 import { Controller, Post, UseInterceptors, Bind, UploadedFiles } from '@nestjs/common';
 import { FileFieldsInterceptor } from '@nestjs/platform-express';
-import { HttpException } from '@nestjs/common';
-import { reach } from 'joi';
+// import { HttpException } from '@nestjs/common';
+// import { reach } from 'joi';
 
 // const HttpException = require('h')
 // import { multer } from 'multer';
 const multer = require('multer');
 const mkdirp = require('mkdirp');
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 // const sizeOf = require('image-size');
-const { jwtConfig } = require('../login/jwt-config');
+// const { jwtConfig } = require('../login/jwt-config');
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -32,14 +32,14 @@ const storage = multer.diskStorage({
 
 const fileFilter = (req, file, cb) => {
   // reject the file
-  try {
-    const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
-    if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
-      throw new Error('Wrong username or password!')
-    }
-  } catch (err) {
-    return cb(new HttpException('Unauthenticated!', 401), false)
-  }
+  // try {
+  //   const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
+  //   if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
+  //     throw new Error('Wrong username or password!')
+  //   }
+  // } catch (err) {
+  //   return cb(new HttpException('Unauthenticated!', 401), false)
+  // }
 
   if (file.fieldname === 'customUpload' && (file.mimetype === "image/png" || file.mimetype === "image/svg+xml" || file.mimetype === "image/jpeg" || file.mimetype === "application/json")) {
     cb(null, true)
