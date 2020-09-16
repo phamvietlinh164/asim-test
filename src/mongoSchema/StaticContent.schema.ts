@@ -14,7 +14,12 @@ export class StaticContent extends Document {
   @Prop({
     required: true,
   })
-  domainList: []
+  enviroment: string
+
+  @Prop({
+    required: true,
+  })
+  domain: string
 
 
 }

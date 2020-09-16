@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post, Body } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body, Put, Delete } from '@nestjs/common';
 import { DomainListService } from './domainList.service';
 
 
@@ -20,18 +20,26 @@ export class DomainListController {
   @Post()
   async create(
     @Body('partnerId') partnerId: string,
-    @Body('domainList') domainList: []) {
+    @Body('enviroment') enviroment: string,
+    @Body('domain') domain: string) {
 
-    const domainListByPartnerId = await this.domainListService.findById(partnerId)
-    if (domainListByPartnerId.length > 0) {
-      const newDomain = { partnerId, domainList }
-      // console.log(newDomain.domainList)
-      // const newDomainList = [...domainListByPartnerId.domainList];
-      console.log(domainListByPartnerId[0].domainList)
-      // return await this.domainListService.findOneAndUpdate({ partnerId }, { newDomainList })
-    } else {
-      return await this.domainListService.create({ partnerId, domainList })
-    }
 
+
+    return await this.domainListService.create({ partnerId, enviroment, domain })
+
+  }
+
+  @Put()
+  async edit(
+    @Body('_id') _id: string,
+    @Body('enviroment') enviroment: string,
+    @Body('domain') domain: string) {
+    return await this.domainListService.update({ _id, enviroment, domain })
+  }
+
+  @Delete(':_id')
+  async delete(
+    @Param('_id') _id: string) {
+    return await this.domainListService.delete(_id)
   }
 }
