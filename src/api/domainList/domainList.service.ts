@@ -53,7 +53,4 @@ export class DomainListService {
       resolve('Delete success!')
     })
   }
-
-
-
 }
