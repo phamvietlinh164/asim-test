@@ -1,7 +1,9 @@
-import { Module } from '@nestjs/common';
+import { Module, NestModule, RequestMethod, MiddlewareConsumer } from '@nestjs/common';
 import { DomainListController } from './domainList.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { DomainListService } from './domainList.service';
+import { Authenticate } from '../../middleware/authenticate/authenticate';
+
 import { StaticContent, StaticContentSchema } from '../../mongoSchema/StaticContent.schema';
 // console.log(StaticContent.name)
 
@@ -10,4 +12,14 @@ import { StaticContent, StaticContentSchema } from '../../mongoSchema/StaticCont
   controllers: [DomainListController],
   providers: [DomainListService],
 })
-export class DomainListModule { }
+export class DomainListModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(Authenticate)
+      .exclude(
+        { path: 'domainList', method: RequestMethod.GET },
+        { path: 'domainList/:partnerId', method: RequestMethod.GET },
+      )
+      .forRoutes(DomainListController);
+  }
+}

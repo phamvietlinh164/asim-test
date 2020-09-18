@@ -22,6 +22,6 @@ export class Authenticate implements NestMiddleware {
     } catch (err) {
       res.status(401).json({ message: 'Unauthenticated!', statusCode: 401 })
     }
-
+    // next();
   }
 }
