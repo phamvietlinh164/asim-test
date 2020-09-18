@@ -10,6 +10,8 @@ export class DomainListController {
   @Get()
   async domainList() {
     return await this.domainListService.findAll()
+
+
   }
 
   @Get(':partnerId')

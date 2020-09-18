@@ -13,14 +13,14 @@ export class Authenticate implements NestMiddleware {
     try {
       const decoded = jwt.verify(req.headers.token, jwtConfig.jwtSecretKey);
       if (decoded.username !== jwtConfig.username || decoded.password !== jwtConfig.password) {
-        res.status(401).json({ message: 'Unauthenticated!', statusCode: 401 })
+        res.status(401).json({ message: 'Unauthenticated!' })
         return
       } else {
         next();
       }
 
     } catch (err) {
-      res.status(401).json({ message: 'Unauthenticated!', statusCode: 401 })
+      res.status(401).json({ message: 'Unauthenticated!' })
     }
     // next();
   }
